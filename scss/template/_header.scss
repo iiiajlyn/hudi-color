@@ -1,0 +1,9 @@
+header {
+    height: 50px;
+    width: 100%;
+    background-color: $palete-dark;
+
+    @media screen and (max-width: 1000px) {
+        display: none
+    }
+}

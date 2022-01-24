@@ -1,0 +1,66 @@
+.transparent {
+    fill: transparent;
+    stroke: transparent;
+}
+
+.outline {
+    fill: #201F1F;
+    stroke: #201F1F;
+    position: relative;
+}
+
+.stroke {
+    stroke-width: 1;
+}
+
+.light {
+    fill: #fefefe;
+    stroke: #fefefe;
+}
+
+.design-box__pocket .outline {
+    stroke-width: 0;
+}
+
+.color-shadow-dark,
+.color-shadow,
+.color-base {
+    fill: #997D68;
+    stroke: #997D68;
+}
+
+.color-base {
+    stroke-width: 1;
+}
+
+.color-shadow {
+    filter: brightness(90%);
+    stroke-width: 0;
+}
+
+.color-shadow-dark {
+    filter: brightness(80%);
+    stroke-width: 1;
+}
+
+.design-box__legs {
+    .cls-1 {
+        fill: #878787;
+        stroke: #878787;
+    }
+
+    .cls-2 {
+        fill: #5c5c5c;
+        stroke: #5c5c5c;
+    }
+
+    .cls-3 {
+        fill: #4a4a4a;
+        stroke: #4a4a4a;
+    }
+
+    .cls-4 {
+        fill: #0b0b0c;
+        stroke: #0b0b0c;
+    }
+}
