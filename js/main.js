@@ -7,8 +7,6 @@ if (document.location.hash) {
 $('.parameters-box__head').owlCarousel({
     loop: false,
     center: true,
-    // autoWidth: true,
-    slideBy: 1,
     margin: 10,
     dots: false,
     nav: true,
@@ -17,18 +15,23 @@ $('.parameters-box__head').owlCarousel({
     responsive: {
         1000: {
             items: 4,
+            touchDrag: false,
+            mouseDrag: false,
+            pullDrag: false,
+            freeDrag: false,
         },
         800: {
             items: 4,
         },
-        500: {
-            items: 2,
+        400: {
+            items: 3,
         },
         0: {
             items: 2,
         }
     }
 });
+
 $('.parameters-box__main').owlCarousel({
     items: 1,
     touchDrag: false,
@@ -43,72 +46,111 @@ $('.parameters-box__main').owlCarousel({
 //массив со всеми параметрами для рандома
 let parametersAllArr = {
     color: [
-        "#000000",
-        "#804E82",
-        "#E4CAF1",
-        "#FDD9E8",
-        "#E5CCAE",
-        "#997D68",
-        "#FFFFFF",
-        "#BAC1BF",
-        "#57555A",
-        "#E42C36",
-        "#FE6203",
-        "#FFE270",
-        "#F2EC7A",
-        "#E33D85",
-        "#74C86A",
-        "#64762C",
-        "#97A38F",
-        "#1F9480",
-        "#B3E2D8",
-        "#2E4393",
-        "#83A3EC",
-        "#BB847F",
-        "#A2BEEE",
-        "#91B4B8",
-        "#EDBFC1",
-        "#FDAE97",
-        "#E2E4E6",
-        "#E5E4EA"
+        ["#000000", "Черный", false, 0],
+        ["#804E82", "Фиолет", false, 0],
+        ["#E4CAF1", "Лаванда", false, 0],
+        ["#FDD9E8", "Маршмеллоу", false, 0],
+        ["#E5CCAE", "Песок", false, 0],
+        ["#997D68", "Кофе", false, 0],
+        ["#FFFFFF", "Белый", false, 1000],
+        ["#BAC1BF", "Дымчатый", false, 1000],
+        ["#57555A", "Графит", false, 1000],
+        ["#E42C36", "Красный", false, 1000],
+        ["#FE6203", "Хеллуин", false, 1000],
+        ["#FFE270", "Желтый", false, 1000],
+        ["#F2EC7A", "Лимонный", false, 1000],
+        ["#E33D85", "Фуксия", false, 1000],
+        ["#74C86A", "Лайм", false, 1000],
+        ["#64762C", "Хаки", false, 1000],
+        ["#97A38F", "Оливка", false, 1000],
+        ["#1F9480", "Изумруд", false, 1000],
+        ["#B3E2D8", "Тиффани", false, 1000],
+        ["#2E4393", "Синий", false, 1000],
+        ["#83A3EC", "Голубой", false, 1000],
+        ["#BB847F", "Пыльная роза", false, 1000],
+        ["#A2BEEE", "Пыльный деним", false, 1500],
+        ["#91B4B8", "Снежная мята", false, 1500],
+        ["#EDBFC1", "Персик", false, 1500],
+        ["#FDAE97", "Коралл", false, 1500],
+        ["#E2E4E6", "Молочный меланж", false, 1500],
+        ["#E5E4EA", "Тофу", false, 1500],
     ],
-    cut: ["bochonok", "pryamoy", "classic"],
-    length: ["long", "midi", "short", "krop"],
+    cut: [
+        ["bochonok", "Бочонок", false, 0],
+        ["pryamoy", "Прямой", false, 0],
+        ["classic", "Классика", false, 0]
+    ],
+    length: [
+        ["long", "Длинный", false, 0],
+        ["midi", "Средний", false, 0],
+        ["short", "Короткий", false, 0],
+        ["krop", "Кроп", false, 0]
+    ],
     bottom: [
-        "na-zatyashke-so-shnurkom",
-        "na-rezinke",
-        "oborka",
-        "obrezanniy-kray",
-        "kashkorse",
-        "shirokiy-manzhet",
-        "shov"
+        ["na-zatyashke-so-shnurkom", "На затяжке со шнурком", false, 0],
+        ["na-rezinke", "На резинке", false, 0],
+        ["oborka", "Оборка", false, 0],
+        ["obrezanniy-kray", "Обрезанный край", false, 0],
+        ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
+        ["shirokiy-manzhet", "Широкий манжет из основной ткани", false, 0],
+        ["shov", "Шов", false, 0],
     ],
     bottomKrop: [
-        "na-zatyashke-so-shnurkom",
-        "na-rezinke",
-        "oborka",
-        "obrezanniy-kray",
-        "kashkorse",
-        "shirokiy-manzhet",
-        "shov"
+        ["na-zatyashke-so-shnurkom", "На затяжке со шнурком", false, 0],
+        ["na-rezinke", "На резинке", false, 0],
+        ["obrezanniy-kray", "Обрезанный край", false, 0],
+        ["shov", "Шов", false, 0],
     ],
-    pocket: ["pocket-no", "kenguru", "na-grudi", "bokovie", "taynik"],
-    cuff: ["na-rezinke", "obrezanniy", "manshet-s-dirkoy", "kashkorse", "shov"],
+    pocket: [
+        ["pocket-no", "Без карманов", false, 0],
+        ["kenguru", "Кенгуру", false, 0],
+        ["na-grudi", "Накладные с клапанами", false, 0],
+        ["bokovie", "С сбоку", false, 0],
+        ["taynik", "Тайник", false, 0],
+    ],
+    cuff: [
+        ["na-rezinke", "На резинке", false, 0],
+        ["obrezanniy", "Обрезанный край", false, 0],
+        ["manshet-s-dirkoy", "С дыркой в манжете", false, 0],
+        ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
+        ["shov", "Шов", false, 0]
+    ],
     hood: [
-        "klassika-s-verevkami",
-        "vnakhlest-bez-verovok",
-        "anorak",
-        "dvoynoy-vorotnik",
-        "anorak-dvoynoy",
-        "na-molnii",
-        "s-molniyey-sboku",
-        "vnakhlest-vorotnik",
-        "dino",
-        "rabbit",
-        "fox",
+        ["klassika-s-verevkami", "Классический с веревками", false, 0],
+        ["vnakhlest-bez-verovok", "Внахлест без веревок", false, 0],
+        ["anorak", "Анорак", false, 0],
+        ["dvoynoy-vorotnik", "Двойной", false, 0],
+        ["anorak-dvoynoy", "Анорак+двойной капюшон", false, 0],
+        ["na-molnii", "На молнии", false, 490],
+        ["s-molniyey-sboku", "с молнией сбоку", false, 490],
+        ["vnakhlest-vorotnik", "Капюшон + воротник", false, 490],
+        ["dino", "Дракон", false, 700],
+        ["rabbit", "Зайка", false, 700],
+        ["fox", "Кошка", false, 700],
     ],
-    fastener: ["000000", "FFFFFF", "804E82", "997D68", "E4CAF1", "E5CCAE"]
-}
+    fastener: [
+        ["000000", "Черный", false, 0],
+        ["FFFFFF", "Белый", false, 0],
+        ["804E82", "Фиолет", false, 0],
+        ["997D68", "Кофе", false, 0],
+        ["E4CAF1", "Лаванда", false, 0],
+        ["E5CCAE", "Песок", false, 0]
+    ]
+},
+    choiceKeyRu = {
+        color: ["Цвет"],
+        cut: ["Крой"],
+        length: ["Длина"],
+        bottom: ["Низ"],
+        pocket: ["Карман"],
+        cuff: ["Манжета"],
+        hood: ["Капюшон"],
+        cloth: ["Ткань"],
+        embroidery: ["Вышивка"],
+        size: ["Размер"],
+        growth: ["Рост"],
+        fastener: ["Молния"],
+    }
 //Добавляем класс .human
 document.querySelector(".display-selection .clothes").addEventListener('click', delHuman)
 document.querySelector(".display-selection .person").addEventListener('click', addHuman)
@@ -126,29 +168,29 @@ choiceArr.forEach(element => {
 );
 //Всплывающая подсказка
 function choiceTitle(elem, title) {
-    document.querySelector(".title-choice").classList.remove("title-anim")
-    setTimeout(animAdd, 200)
+    document.querySelector(".title-choice").classList.remove("title-anim");
+    setTimeout(animAdd, 200);
     //document.querySelector(".title-choice span").innerHTML = elem
-    document.querySelector(".title-choice b").innerHTML = title
+    document.querySelector(".title-choice b").innerHTML = title;
 }
 function animAdd() {
     document.querySelector(".title-choice").classList.add("title-anim")
 }
 
 //Активируем кнопки вперед назад красим пройденые пути а также где мы находимся
-let btnNext = document.querySelector('.parameters-progress .btn_next'),
-    lineProgress = document.querySelector('.parameters-progress__line-activ'),
+//let btnNext = document.querySelector('.parameters-progress .btn_next'),
+let lineProgress = document.querySelector('.parameters-progress__line-activ'),
     owlNext = document.querySelector('.owl-nav .owl-next'),
     owlPrev = document.querySelector('.owl-nav .owl-prev')
 owlNext.classList.add('disable')
 
-btnNext.addEventListener('click', disableAdd)
+//btnNext.addEventListener('click', disableAdd)
 owlNext.addEventListener('click', disableAdd)
 owlPrev.addEventListener('click', disableAdd)
 
 function disableAdd() {
     owlNext.classList.add('disable')
-    btnNext.classList.add('disable')
+    //btnNext.classList.add('disable')
 }
 //Шкала прогресса
 function progres() {
@@ -164,9 +206,7 @@ function progres() {
         }
     });
     lineProgress.style.width = hudiProgress + "%";
-    if (hudiProgress == 100) {
-        btnNext.classList.add("none")
-    }
+
     if (progresOccupancy) {
         finishBtn.classList.remove("disable")
     }
@@ -206,10 +246,10 @@ if (choiceGetJson) {
         pocket: ["kenguru", "Кенгуру", false, 0],
         cuff: ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
         hood: ["vnakhlest-bez-verovok", "Внахлест без веревок", false, 0],
-        cloth: ["yes", "С начесом - теплый, лучше держит форму", false, 0],
-        embroidery: ["no", "Уточнить у клиента", false, 0],
-        size: ["no", "Уточнить у клиента", false, 0],
-        growth: ["no", "Уточнить у клиента", false, 0],
+        cloth: ["yes", "С начесом - теплый", false, 0],
+        embroidery: ["no", "Не выбран", false, 0],
+        size: ["no", "Не выбран", false, 0],
+        growth: ["no", "Не выбран", false, 0],
     }
 }
 
@@ -226,7 +266,7 @@ async function choiceActive() {
     }
     this.classList.add("active");
 
-    btnNext.classList.remove("disable");
+    //btnNext.classList.remove("disable");
     owlNext.classList.remove('disable');
     //Цвет
     if (attr == "color") {
@@ -408,8 +448,7 @@ async function choiceActive() {
         document.querySelector("[data-choice=bottom] [data-item=kashkorse]").classList.remove("none")
     }
     basePriceHTML();
-    let choiceSetJson = JSON.stringify(choiceElem);
-    setCookie('hudi', choiceSetJson, { expires: Date(14) });
+    cookieAdd();
 }
 //Рандомные числа
 let numRandomArr = document.querySelectorAll(".choice__info-box .num-random"),
@@ -426,70 +465,6 @@ function parametersMobFun() {
     this.classList.toggle("active");
     parametersMobItem.classList.toggle("active");
 }
-//Форма обратной связи
-let finishBtn = document.querySelector(".btn_ico_cart"),
-    finishPrev = document.querySelector(".finish-form__prev"),
-    finishForm = document.querySelector(".finish-form");
-
-finishBtn.addEventListener("click", finishFormAdd)
-finishPrev.addEventListener("click", finishFormDel)
-function finishFormAdd() {
-    finishForm.classList.add("active")
-    finishBtn.classList.add("none")
-}
-function finishFormDel() {
-    finishForm.classList.add("del")
-    finishBtn.classList.remove("none")
-    setTimeout(function () {
-        finishForm.classList.remove("del")
-        finishForm.classList.remove("active")
-    }, 50);
-}
-//Формирует POST для отправки
-let finishHudiInput = document.getElementById("finish-form__hidi"),
-    finishHudiPrice = document.getElementById("finish-form__price"),
-    finishHudiCountry = document.getElementById("finish-form__country"),
-    finishHudiValue = "";
-finishBtn.addEventListener("click", finishHudiFun)
-function finishHudiFun() {
-    for (let key in choiceElem) {
-        finishHudiValue += key + ": ";
-        finishHudiValue += choiceElem[key][1] + ",";
-    }
-    finishHudiInput.value = finishHudiValue;
-    finishHudiPrice.value = finalPrice;
-    finishHudiCountry.value = document.querySelector(".iti__flag-container .iti__selected-flag").getAttribute("title");
-}
-//Проверка все ли поля заполнены
-let inputArr = document.querySelectorAll(".finish-form input[required]"),
-    inputCheckbox = document.getElementById("finish-form__checkbox"),
-    formButton = document.querySelector(".finish-form__item .btn"),
-    labelCheckbox = document.querySelector("[for='finish-form__checkbox']");
-
-labelCheckbox.addEventListener("click", inputCheck)
-inputArr.forEach(element => {
-    element.addEventListener("focusout", inputCheck)
-});
-
-function inputCheck() {
-    setTimeout(function () {
-        let check = false;
-        if (!inputCheckbox.checked) {
-            check = true;
-        }
-        inputArr.forEach(element => {
-            if (element.value == "") {
-                check = true;
-            }
-        });
-        if (check) {
-            formButton.classList.add("disable")
-        } else {
-            formButton.classList.remove("disable")
-        }
-    }, 50);
-
-}
 
 //Решаем баг на айфонах с 100vh
 let vh = window.innerHeight * 0.01;
@@ -499,36 +474,52 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-//Таблица размеров
-let sizeBtn = document.querySelector(".choice-size .table-size"),
-    sizeModal = document.querySelector(".size-modal"),
-    sizePrev = document.querySelector(".size-modal .size-modal__prev")
 
-sizeBtn.addEventListener("click", sizeAdd)
-sizePrev.addEventListener("click", sizeDel)
+//Всплывающее окно
+let modal = document.querySelector(".modal"),
+    modalPrev = document.querySelector(".modal__prev"),
+    modalBox = document.querySelector(".modal__box"),
+    modalBtnArr = document.querySelectorAll("[data-modal]");
 
-function sizeAdd() {
-    sizeModal.classList.add("active")
+modalBtnArr.forEach(element => {
+    element.addEventListener("click", modalAdd);
+});
+
+modalPrev.addEventListener("click", modalDel);
+
+async function modalAdd() {
+    const promise = new Promise(async (resolve, reject) => {
+        let modalName = this.dataset.modal,
+            modalItem = await fetch(`./modal/_${modalName}.html`);
+        modal.classList.add("active");
+
+        if (this.dataset.modal == "form") {
+            modal.classList.add("full");
+        } else {
+            modal.classList.remove("full");
+        }
+        if (modalItem.ok) {
+            let text = await modalItem.text();
+            modalBox.innerHTML = text;
+            if (this.dataset.modal === "form") {
+                if (typeof formFlag === "undefined") {
+                    await $.getScript("./js/_form.js");
+                }
+                resolve(modalForm())
+            }
+        }
+    });
+    promise.then()
 }
 
-function sizeDel() {
-    sizeModal.classList.add("del")
+function modalDel() {
+    modal.classList.add("del")
     setTimeout(function () {
-        sizeModal.classList.remove("del")
-        sizeModal.classList.remove("active")
+        modal.classList.remove("del")
+        modal.classList.remove("active")
     }, 50);
 }
-
 // Go to the next item
-$('.parameters-box__head').on('translated.owl.carousel', function (event) {
-    let nextElem = document.querySelector(".owl-item.active.center").nextElementSibling.childNodes[0].getAttribute("data-hash")
-    if (!(nextElem == false)) {
-        btnNext.href = "#" + nextElem
-    } else {
-        btnNext.href = "#"
-    }
-    btnNext.classList.add("disable")
-})
 
 $('.btn_next').click(clickNextNone);
 $('.owl-nav .owl-next').click(clickNextNone);
@@ -551,38 +542,13 @@ function clickPrevNone() {
     }, 20);
 }
 
-//Отправка формы
-$("#finish-form").submit(function (e) {
-    e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "/form.php",
-        data: $("#finish-form").serialize(),
-        success: function (data) {
-            let submitModal = document.querySelector(".submit-modal"),
-                submitInfo = document.querySelector(".submit-modal__info");
-            submitModal.classList.add("active");
-            if (data == "yes") {
-                submitInfo.classList.add("yes");
-                document.getElementById("price-info").innerHTML = finalPrice + " руб."
-                document.getElementById("price-economy").innerHTML = (14990 - finalPrice) + " руб."
-            } else {
-                submitInfo.classList.add("no")
-            }
-        }
-    });
-});
-//Инпут маска
-$("#finish-form__tel").mask("(999) 999-9999");
-let input = document.querySelector("#finish-form__tel");
-window.intlTelInput(input, {
-    //nationalMode: false,
-    preferredCountries: ["ru", "kz", "by", "ua",],
-    autoPlaceholder: false,
-    preferredCountries: ["ru"],
-    utilsScript: "js/intlTelInput/utils.js",
-});
 
+
+//Пишем куки
+function cookieAdd() {
+    let choiceSetJson = JSON.stringify(choiceElem);
+    setCookie('hudi', choiceSetJson, { expires: Date(14) });
+}
 //Заполняем прогресс констуктора из кук
 async function startHudi() {
     for (let key in choiceElem) {
@@ -590,14 +556,15 @@ async function startHudi() {
             //навигация
             let elem = document.querySelector(`.parameters-box__head [data-hash*=${key}]`).parentNode
             elem.classList.add("check");
-            //что выбрано елементы
-            let colorArr = document.querySelectorAll(`.choice [data-choice*=${key}] li`);
-            colorArr.forEach(element => {
-                if (element.getAttribute("data-item") == choiceElem[key][0]) {
-                    element.classList.add("active")
-                }
-            });
         }
+        //что выбрано елементы
+        let colorArr = document.querySelectorAll(`.choice [data-choice*=${key}] li`);
+        colorArr.forEach(element => {
+            element.classList.remove("active")
+            if (element.getAttribute("data-item") == choiceElem[key][0]) {
+                element.classList.add("active")
+            }
+        });
     }
 
     //собираем svg
@@ -615,11 +582,17 @@ async function startHudi() {
     if (choiceElem["length"][0] == "krop") {
         document.querySelector(".parameters-box__head [data-hash=pocket]").parentNode.classList.add("disable");
         document.querySelector(".choice [data-choice=pocket]").parentNode.classList.add("disable");
+    } else {
+        document.querySelector(".parameters-box__head [data-hash=pocket]").parentNode.classList.remove("disable");
+        document.querySelector(".choice [data-choice=pocket]").parentNode.classList.remove("disable");
     }
     //Проверка на молнию
     if (choiceElem["hood"][0] == "s-molniyey-sboku" || choiceElem["hood"][0] == "na-molnii") {
         document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.remove("disable");
         document.querySelector(".choice [data-choice=fastener]").parentNode.classList.remove("disable");
+    } else {
+        document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.add("disable");
+        document.querySelector(".choice [data-choice=fastener]").parentNode.classList.add("disable");
     }
     //Проверка на длину
     if (choiceElem["length"][0] == "short") {
@@ -674,3 +647,83 @@ async function startHudi() {
 }
 startHudi();
 progres();
+
+//рандом
+let randomBtn = document.getElementById("random-btn");
+randomBtn.onclick = randomHudi;
+function randomHudi() {
+    for (let key in parametersAllArr) {
+        let element = parametersAllArr[key];
+        let randomNum = Math.floor(Math.random() * element.length);
+        if (choiceElem[key]) {
+            for (let index = 0; index < choiceElem[key].length; index++) {
+                choiceElem[key][index] = element[randomNum][index]
+            }
+        }
+    }
+    if (choiceElem["length"][0] === "krop") {
+        choiceElem["pocket"][0] = "pocket-no";
+        let randomBottom = Math.floor(Math.random() * parametersAllArr["bottomKrop"].length);
+        for (let index = 0; index < parametersAllArr["bottomKrop"].length; index++) {
+
+            choiceElem["bottom"][index] = parametersAllArr["bottomKrop"][randomBottom][index]
+        }
+    }
+    if (choiceElem["length"][0] === "short" && choiceElem["pocket"][0] === "bokovie") {
+        choiceElem["pocket"][0] = "kenguru";
+    }
+    startHudi();
+    basePriceHTML();
+    cookieAdd();
+}
+//меняем цвет
+let areaColor = document.querySelector(".design-box");
+
+areaColor.addEventListener('dblclick', nextColor);
+function nextColor() {
+    let colorArr = parametersAllArr["color"],
+        colorItem = choiceElem["color"];
+    for (let index = 0; index < colorArr.length; index++) {
+        if (colorItem[0] == colorArr[index][0]) {
+            if (index == (colorArr.length - 1)) {
+                for (let i = 0; i < colorItem.length; i++) {
+                    return colorItem[i] = colorArr[0][i]
+                }
+                break
+
+            } else {
+                for (let i = 0; i < colorItem.length; i++) {
+                    colorItem[i] = colorArr[index + 1][i];
+                }
+                break
+            }
+        }
+    }
+    startHudi();
+    basePriceHTML();
+    cookieAdd();
+}
+//hover подсказка
+let choiceImgArr = document.querySelectorAll(".choice-img li"),
+    choiceImgInfo;
+choiceImgArr.forEach(element => {
+    element.addEventListener("mouseenter", choiceImginfoAdd);
+    element.addEventListener("mouseleave", choiceImginfoDel);
+});
+
+function choiceImginfoAdd() {
+    choiceImgInfo = document.createElement("div"),
+        info = this.dataset.title,
+        price = this.dataset.price;
+    if (this.dataset.price) {
+        choiceImgInfo.innerHTML = `<p>${info}</p><span>${price} руб.</span>`
+    }
+    else {
+        choiceImgInfo.innerHTML = `<p>${info}</p>`
+    }
+    choiceImgInfo.className = "choice-img__hover";
+    this.append(choiceImgInfo)
+}
+function choiceImginfoDel() {
+    this.removeChild(choiceImgInfo)
+}

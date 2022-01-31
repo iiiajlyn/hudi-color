@@ -1,18 +1,63 @@
-    <p class="modal__title">Укажи свои контакты и <br>закрепи скидку </p>
-    <form id="modal-form">
-        <div class="modal-form__item"><label for="modal-form__name">Имя</label><input id="modal-form__name" type="text"
-                name="name" required /></div>
-        <div class="modal-form__item"><label for="modal-form__tel">Телефон</label><input id="modal-form__tel" type="tel"
-                name="tel" required /></div>
-        <div class="modal-form__item"><label for="modal-form__email">Email</label><input id="modal-form__email"
-                type="email" name="email" required /></div>
-        <div class="modal-form__item"><label for="modal-form__promo">Промокод</label><input id="modal-form__promo"
-                type="text" name="promo" /></div>
-        <div class="modal-form__counterfeit"><input id="modal-form__hidi" type="text" name="hudi" /><input
-                id="modal-form__price" type="text" name="price" /><input id="modal-form__country" type="text"
-                name="country" /></div>
-        <div class="modal-form__accept"><input id="modal-form__checkbox" type="checkbox" name="checkbox"
-                required /><label for="modal-form__checkbox">Я соглашаюсь <a href="http://test.ru" target="_blank">с
-                    политикой конфиденциальности <br> и офертой</a></label></div>
-        <div class="modal-form__item"><button type="submit" class="btn disable">Последний шаг</button></div>
-    </form>
+   <div class="left">
+           <div class="modal__prev">
+                   <p>Вернуться в редактор</p>
+           </div>
+           <div class="modal-hudi">
+                   <div class="modal-hudi__img"></div>
+                   <div class="modal-hudi__description">
+                           <p class="title">Худи Casual</p>
+                           <p class="price">6 990 ₽</p>
+                           <p class="old-prace">14 990 ₽</p>
+                   </div>
+                   <ul class="modal-hudi__params"></ul>
+           </div>
+           <div class="modal-soc">
+                   <div class="modal-soc__img">
+                           <picture>
+                                   <source type="image/webp" srcset="./img/img-soc.webp"><img alt="img"
+                                           src="./img/img-soc.jpg"></picture>
+                   </div>
+                   <div class="modal-soc__box">
+                           <h3>Ура ! Мы очень рады,
+                                   <br>что ты с нами :)</h3>
+                           <p>А тут текст,
+                                   который описывает эту самую радость и говорит о преимуществах того,
+                                   что человек заказал у вас худи</p>
+                   </div>
+           </div>
+   </div>
+   <div class="right">
+           <p class="modal__title">Укажи свои контакты<br>и закрепи за собой скидку <b>15%</b></p>
+           <form id="modal-form">
+                   <div class="modal-form__head">
+                           <div class="modal-form__item"><label for="modal-form__name">Имя</label><input
+                                           id="modal-form__name" type="text" name="name" required /></div>
+                           <div class="modal-form__item"><label for="modal-form__tel">Телефон</label><input
+                                           id="modal-form__tel" type="tel" name="tel" required /></div>
+                           <div class="modal-form__item"><label for="modal-form__email">Email</label><input
+                                           id="modal-form__email" type="email" name="email" required /></div>
+                           <p class="promo">У меня есть промокод</p>
+                           <div class="modal-form__item"><label for="modal-form__promo">Промокод</label><input
+                                           id="modal-form__promo" type="text" name="promo" /></div>
+                           <div class="modal-form__counterfeit"><input id="modal-form__hidi" type="text"
+                                           name="hudi" /><input id="modal-form__price" type="text" name="price" /><input
+                                           id="modal-form__country" type="text" name="country" /></div>
+                           <div class="modal-form__accept"><input id="modal-form__checkbox" type="checkbox"
+                                           name="checkbox" required /><label for="modal-form__checkbox">Я соглашаюсь <a
+                                                   href="#" target="_blank">с политикой конфиденциальности <br>и
+                                                   офертой</a></label></div>
+                   </div>
+                   <div class="modal-form__footer">
+                           <div class="choice__info-box">
+                                   <picture>
+                                           <source type="image/webp" srcset="./img/img-text-4.webp">
+                                           <img alt="img" src="./img/img-text-4.jpg">
+                                   </picture>
+                                   <p>Персональный менеджер ответит на твои вопросы в <a href="#"
+                                                   target="_blank">чате!</a></p>
+                           </div>
+                           <div class="modal-form__item"><button type="submit" class="btn disable">Последний
+                                           шаг</button></div>
+                   </div>
+           </form>
+   </div>

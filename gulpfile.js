@@ -22,9 +22,10 @@ function browsersync() {
 function scriptsIndex() {
     return src([
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/owl.carousel2/dist/owl.carousel.min.js',
+        //'node_modules/owl.carousel2/dist/owl.carousel.min.js',
         'js/intlTelInput/intlTelInput.min.js',
         'js/jquery.maskedinput.min.js',
+        'js/owl.carousel.min.js',
         //'js/main.js',
     ])
         .pipe(concat('main.min.js'))

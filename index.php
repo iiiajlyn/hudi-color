@@ -23,21 +23,12 @@
                     <div class="person"><img src='./img/ico-2.png' alt='img' srcset='./img/svg/ico-2.svg'></div>
                 </div>
                 <div class="hoodie-nav_bottom">
-                    <img src='./img/random.png' alt='img' srcset='./img/svg/random.svg'>
+                    <img src='./img/random.png' id="random-btn" alt='img' srcset='./img/svg/random.svg'>
                     <div class="clue">?</div>
                 </div>
                 <div class="title-choice title-anim">
                     <p><span></span> <b>Всего 10 простых шагов<br>и худи твое!</b></p>
                 </div>
-
-                <div class="hoodie-info">
-                    <picture>
-                        <source type="image/webp" srcset="./img/img-text-2.webp">
-                        <img alt="img" src="./img/img-text-2.jpg">
-                    </picture>
-                    <p>Отслеживай путь своего худи на произвостве в личном кабинете!</p>
-                </div>
-
                 <div class="design-box">
                     <div class="design-box__legs">
                     </div>
@@ -304,7 +295,7 @@
                                         </picture>
                                     </li>
                                 </ul>
-                                <p class="choice-more">Подробнее</p>
+                                <p class="choice-more" data-modal="more">Подробнее</p>
                                 <p class="disable">Если вы хотите добавить карман то <a href="#length">измените длину</a></p>
                             </div>
                             <div class="choice__info">
@@ -487,13 +478,13 @@
                         <div class="choice" data-hash="cloth">
                             <div class="choice-img" data-choice="cloth">
                                 <ul class="choice-img__cloth">
-                                    <li data-item="no" data-title="Без начеса - более легкий" data-price="1000">
+                                    <li data-item="no" data-title="Без начеса" data-price="1000">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/cloth/img-1.webp">
                                             <img alt="img" src="./img/params/cloth/img-1.jpg">
                                         </picture>
                                     </li>
-                                    <li data-item="yes" data-title="С начесом - теплый, лучше держит форму">
+                                    <li data-item="yes" data-title="С начесом - теплый">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/cloth/img-2.webp">
                                             <img alt="img" src="./img/params/cloth/img-2.jpg">
@@ -602,7 +593,7 @@
                                         <p>7xl</p>
                                     </li>
                                 </ul>
-                                <p class="table-size">Таблица размеров</p>
+                                <p class="table-size" data-modal="size">Таблица размеров</p>
 
                             </div>
                             <div class="choice__info">
@@ -640,15 +631,14 @@
 
                         </div>
                     </div>
-                    <div class="parameters-progress">
-                        <div class="parameters-progress__line">
-                            <div class="parameters-progress__line-activ" style="width: 0%;"></div>
-                        </div>
-                        <a href="#cut" class="btn_next disable">Далее</a>
-                    </div>
                     <div class="parameters-box__footer">
-                        <p class="price"><span>2 990</span><i>14 990 ₽</i></p>
-                        <div class="btn_ico_cart disable">В корзину</div>
+                        <div class="parameters-progress">
+                            <div class="parameters-progress__line">
+                                <div class="parameters-progress__line-activ" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <p class="price"><span>2 990</span><i> 14 990 ₽</i></p>
+                        <div class="btn_ico_cart disable" data-modal="form">В корзину</div>
                     </div>
                 </div>
             </div>
@@ -656,45 +646,7 @@
                 <div class="modal__prev"></div>
                 <div class="modal__box"></div>
             </div>
-            <div class="finish-form">
-                <div class="finish-form__prev"></div>
-                <p class="finish-form__title">Укажи свои контакты и <br>закрепи скидку </p>
-                <form id="finish-form">
-                    <div class="finish-form__item"><label for="finish-form__name">Имя</label><input id="finish-form__name" type="text" name="name" required /></div>
-                    <div class="finish-form__item"><label for="finish-form__tel">Телефон</label><input id="finish-form__tel" type="tel" name="tel" required /></div>
-                    <div class="finish-form__item"><label for="finish-form__email">Email</label><input id="finish-form__email" type="email" name="email" required /></div>
-                    <div class="finish-form__item"><label for="finish-form__promo">Промокод</label><input id="finish-form__promo" type="text" name="promo" /></div>
-                    <div class="finish-form__counterfeit"><input id="finish-form__hidi" type="text" name="hudi" /><input id="finish-form__price" type="text" name="price" /><input id="finish-form__country" type="text" name="country" /></div>
-                    <div class="finish-form__accept"><input id="finish-form__checkbox" type="checkbox" name="checkbox" required /><label for="finish-form__checkbox">Я соглашаюсь <a href="http://test.ru" target="_blank">с политикой конфиденциальности <br> и офертой</a></label></div>
-                    <div class="finish-form__item"><button type="submit" class="btn disable">Последний шаг</button></div>
-                </form>
-            </div>
-            <div class="size-modal">
-                <div class="size-modal__prev">
-                </div>
-                <picture>
-                    <source type="image/webp" srcset="../img/size.webp">
-                    <img alt="img" src="../img/size.jpg">
-                </picture>
-            </div>
-            <div class="submit-modal">
-                <div class="submit-modal__info">
-                    <div class="yes">
-                        <p class="submit-modal__info-title">Ваш заказ успешно<br>оформлен</p>
-                        <p>Итоговая стоимость вашего заказа со всеми выбранными опциями: <b id="price-info"></b> вместо <s>14990 руб.</s> Экономия при заказе сегодня: <b id="price-economy"></b></p>
-                        <p>Если вы не имеете возможности оплатить заказ сейчас - запросите резерв скидки в WhatsApp, нажав следующую кнопку:</p>
-                        <button type="submit" class="btn">Оплатить заказ</button> <button type="submit" class="btn_stroke">WhatsApp</button>
-                        <p><b>Внимание!</b> Если вы не произведёте оплату сейчас или не забронируете скидку акционная цена может не сохраниться и быть выше.</p>
-                        <p><b>Доставка: </b>Когда изделие будет готово, мы отправим письмо со ссылкой, где вы сможете выбрать удобный способ доставки и оплатить ее. </p>
-                        <p><a class="btn_disable" href="/">Оформить еще заказ</a></p>
-                    </div>
-                    <div class="no">
-                        <p class="submit-modal__info-title">Ошибка</p>
-                        <p> Перезвоните нам +7 495 414-22-64 и мы решим вашу проблему
-                            или попробуйте оформить заказ снова</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>

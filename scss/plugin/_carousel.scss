@@ -242,6 +242,7 @@
     cursor: pointer;
     border-radius: $radius;
     transition: $transition;
+    border: none;
 }
 
 .owl-nav [class*='owl-']:hover {
