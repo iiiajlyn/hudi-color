@@ -13,7 +13,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 function browsersync() {
     browserSync.init({
-        proxy: "hudi",
+        proxy: "hudi-color",
         notify: true,
         online: false
     })

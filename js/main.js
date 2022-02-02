@@ -14,17 +14,17 @@ $('.parameters-box__head').owlCarousel({
     URLhashListener: true,
     responsive: {
         1000: {
-            items: 4,
+            items: 3,
             touchDrag: false,
             mouseDrag: false,
             pullDrag: false,
             freeDrag: false,
         },
         800: {
-            items: 4,
+            items: 2,
         },
         400: {
-            items: 3,
+            items: 2,
         },
         0: {
             items: 2,
@@ -75,82 +75,7 @@ let parametersAllArr = {
         ["#E2E4E6", "Молочный меланж", false, 1500],
         ["#E5E4EA", "Тофу", false, 1500],
     ],
-    cut: [
-        ["bochonok", "Бочонок", false, 0],
-        ["pryamoy", "Прямой", false, 0],
-        ["classic", "Классика", false, 0]
-    ],
-    length: [
-        ["long", "Длинный", false, 0],
-        ["midi", "Средний", false, 0],
-        ["short", "Короткий", false, 0],
-        ["krop", "Кроп", false, 0]
-    ],
-    bottom: [
-        ["na-zatyashke-so-shnurkom", "На затяжке со шнурком", false, 0],
-        ["na-rezinke", "На резинке", false, 0],
-        ["oborka", "Оборка", false, 0],
-        ["obrezanniy-kray", "Обрезанный край", false, 0],
-        ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
-        ["shirokiy-manzhet", "Широкий манжет из основной ткани", false, 0],
-        ["shov", "Шов", false, 0],
-    ],
-    bottomKrop: [
-        ["na-zatyashke-so-shnurkom", "На затяжке со шнурком", false, 0],
-        ["na-rezinke", "На резинке", false, 0],
-        ["obrezanniy-kray", "Обрезанный край", false, 0],
-        ["shov", "Шов", false, 0],
-    ],
-    pocket: [
-        ["pocket-no", "Без карманов", false, 0],
-        ["kenguru", "Кенгуру", false, 0],
-        ["na-grudi", "Накладные с клапанами", false, 0],
-        ["bokovie", "С сбоку", false, 0],
-        ["taynik", "Тайник", false, 0],
-    ],
-    cuff: [
-        ["na-rezinke", "На резинке", false, 0],
-        ["obrezanniy", "Обрезанный край", false, 0],
-        ["manshet-s-dirkoy", "С дыркой в манжете", false, 0],
-        ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
-        ["shov", "Шов", false, 0]
-    ],
-    hood: [
-        ["klassika-s-verevkami", "Классический с веревками", false, 0],
-        ["vnakhlest-bez-verovok", "Внахлест без веревок", false, 0],
-        ["anorak", "Анорак", false, 0],
-        ["dvoynoy-vorotnik", "Двойной", false, 0],
-        ["anorak-dvoynoy", "Анорак+двойной капюшон", false, 0],
-        ["na-molnii", "На молнии", false, 490],
-        ["s-molniyey-sboku", "с молнией сбоку", false, 490],
-        ["vnakhlest-vorotnik", "Капюшон + воротник", false, 490],
-        ["dino", "Дракон", false, 700],
-        ["rabbit", "Зайка", false, 700],
-        ["fox", "Кошка", false, 700],
-    ],
-    fastener: [
-        ["000000", "Черный", false, 0],
-        ["FFFFFF", "Белый", false, 0],
-        ["804E82", "Фиолет", false, 0],
-        ["997D68", "Кофе", false, 0],
-        ["E4CAF1", "Лаванда", false, 0],
-        ["E5CCAE", "Песок", false, 0]
-    ]
-},
-    choiceKeyRu = {
-        color: ["Цвет"],
-        cut: ["Крой"],
-        length: ["Длина"],
-        bottom: ["Низ"],
-        pocket: ["Карман"],
-        cuff: ["Манжета"],
-        hood: ["Капюшон"],
-        cloth: ["Ткань"],
-        embroidery: ["Вышивка"],
-        size: ["Размер"],
-        growth: ["Рост"],
-        fastener: ["Молния"],
-    }
+}
 //Добавляем класс .human
 document.querySelector(".display-selection .clothes").addEventListener('click', delHuman)
 document.querySelector(".display-selection .person").addEventListener('click', addHuman)
@@ -227,25 +152,43 @@ function basePriceHTML() {
     }
 }
 // Параметры по умолчанию
-document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.add("disable");
-document.querySelector(".choice [data-choice=fastener]").parentNode.classList.add("disable");
 
 let choiceElem,
     zipper = false,
     itemNum = 0,
-    choiceGetJson = getCookie('hudi', json = true);
+    choiceGetJson = getCookie('hudi', json = true),
+    choiceKeyRu = {
+        color: ["Цвет"],
+        cut: ["Крой"],
+        length: ["Длина"],
+        bottom: ["Низ"],
+        pocket: ["Карман"],
+        cuff: ["Манжета"],
+        hood: ["Капюшон"],
+        cloth: ["Ткань"],
+        embroidery: ["Вышивка"],
+        size: ["Размер"],
+        growth: ["Рост"],
+        "sleeve-left": ["Левый рукав"],
+        "sleeve-right": ["Правый рукав"],
+        "cuff-right": ["Левый манжет"],
+        "cuff-left": ["Правый манжет"],
+        front: ["Спереди"],
+        back: ["Спина"],
+    }
 
 if (choiceGetJson) {
     choiceElem = choiceGetJson;
 } else {
     choiceElem = {
-        color: ["#997D68", "Кофе", false, 0],
-        cut: ["pryamoy", "Прямой", false, 0],
-        length: ["midi", "Средний", false, 0],
-        bottom: ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
-        pocket: ["kenguru", "Кенгуру", false, 0],
-        cuff: ["kashkorse", "Декоративная резинка кашкорсе", false, 0],
-        hood: ["vnakhlest-bez-verovok", "Внахлест без веревок", false, 0],
+        "sleeve-left": ["#997D68", "Кофе", false, 0],
+        "sleeve-right": ["#997D68", "Кофе", false, 0],
+        "cuff-right": ["#997D68", "Кофе", false, 0],
+        "cuff-left": ["#997D68", "Кофе", false, 0],
+        front: ["#997D68", "Кофе", false, 0],
+        back: ["#997D68", "Кофе", false, 0],
+        hood: ["#997D68", "Кофе", false, 0],
+        pocket: ["#997D68", "Кофе", false, 0],
         cloth: ["yes", "С начесом - теплый", false, 0],
         embroidery: ["no", "Не выбран", false, 0],
         size: ["no", "Не выбран", false, 0],
@@ -254,13 +197,12 @@ if (choiceGetJson) {
 }
 
 //Конструктор
-async function choiceActive() {
+async function choiceActive(param = false) {
     let attr = this.parentNode.parentNode.getAttribute("data-choice"),
         elem = document.querySelector(`div[data-choice*=${attr}] li.active`),
         title = this.getAttribute("data-title"),
         item = this.getAttribute("data-item"),
         price = Number(this.getAttribute("data-price"));
-
     if (elem) {
         elem.classList.remove("active");
     }
@@ -269,144 +211,67 @@ async function choiceActive() {
     //btnNext.classList.remove("disable");
     owlNext.classList.remove('disable');
     //Цвет
-    if (attr == "color") {
+    if (attr == "sleeve-left") {
+        designItem = ".design-box__sleeve_left"
         choiceElem[attr] = [item, title, true, price];
         style = document.querySelector('style');
-        style.innerHTML = `.color-shadow-dark, .color-shadow, .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
         choiceTitle("Цвет: ", choiceElem[attr][1]);
-
     }
-    //Крой
-    if (attr == "cut") {
+    if (attr == "sleeve-right") {
+        designItem = ".design-box__sleeve_right"
         choiceElem[attr] = [item, title, true, price];
-        let lengthItem = await fetch(`./img/svg/gerl/${choiceElem[attr][0]}/length/${choiceElem["length"][0]}.svg`),
-            bottomItem = await fetch(`./img/svg/gerl/${choiceElem[attr][0]}/bottom/${choiceElem["length"][0]}/${choiceElem["bottom"][0]}.svg`),
-            cuffItem = await fetch(`./img/svg/gerl/${choiceElem[attr][0]}/cuff/${choiceElem["cuff"][0]}.svg`);
-        choiceTitle("Крой: ", choiceElem[attr][1]);
-        if (lengthItem.ok) {
-            let text = await lengthItem.text();
-            let urlDoom = document.querySelector(".design-box__length");
-            urlDoom.innerHTML = text;
-        }
-        if (bottomItem.ok) {
-            let text = await bottomItem.text();
-            let urlDoom = document.querySelector(".design-box__bottom");
-            urlDoom.innerHTML = text;
-        }
-        if (cuffItem.ok) {
-            let text = await cuffItem.text();
-            let urlDoom = document.querySelector(".design-box__cuff");
-            urlDoom.innerHTML = text;
-        }
-
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
-    //Длина
-    if (attr == "length") {
+    if (attr == "cuff-left") {
+        designItem = ".design-box__cuff_left"
         choiceElem[attr] = [item, title, true, price];
-        let lengthItem,
-            bottomItem,
-            pocketItem;
-        if (item == "krop") {
-            choiceElem["pocket"] = ["pocket-no", "Без карманов", false, 0];
-            choiceElem["bottom"] = ["shov", "Шов", false, 0];
-            lengthItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/length/${choiceElem[attr][0]}.svg`);
-            bottomItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/bottom/${choiceElem[attr][0]}/${choiceElem["bottom"][0]}.svg`);
-            pocketItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/pocket/${choiceElem["pocket"][0]}.svg`);
-            document.querySelector(".parameters-box__head [data-hash=pocket]").parentNode.classList.add("disable");
-            document.querySelector(".choice [data-choice=pocket]").parentNode.classList.add("disable");
-        }
-        else {
-            // choiceElem["pocket"] = ["kenguru", "Кенгуру", 0];
-            // choiceElem["bottom"] = ["kashkorse", "Декоративная резинка кашкорсе", 0];
-            lengthItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/length/${choiceElem[attr][0]}.svg`);
-            bottomItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/bottom/${choiceElem[attr][0]}/${choiceElem["bottom"][0]}.svg`);
-            pocketItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/pocket/${choiceElem["pocket"][0]}.svg`);
-            document.querySelector(".parameters-box__head [data-hash=pocket]").parentNode.classList.remove("disable");
-            document.querySelector(".choice [data-choice=pocket]").parentNode.classList.remove("disable");
-        }
-        choiceTitle("Длина: ", choiceElem[attr][1]);
-        if (lengthItem.ok) {
-            let text = await lengthItem.text();
-            let urlDoom = document.querySelector(".design-box__length");
-            urlDoom.innerHTML = text;
-        }
-        if (bottomItem.ok) {
-            let text = await bottomItem.text();
-            let urlDoom = document.querySelector(".design-box__bottom");
-            urlDoom.innerHTML = text;
-        }
-        if (pocketItem.ok) {
-            let text = await pocketItem.text();
-            let urlDoom = document.querySelector(".design-box__pocket");
-            urlDoom.innerHTML = text;
-        }
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
-    //Низ
-    if (attr == "bottom") {
+    if (attr == "cuff-right") {
+        designItem = ".design-box__cuff_right"
         choiceElem[attr] = [item, title, true, price];
-        let bottomItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/bottom/${choiceElem["length"][0]}/${choiceElem[attr][0]}.svg`);
-        choiceTitle("Низ: ", choiceElem[attr][1]);
-        if (bottomItem.ok) {
-            let text = await bottomItem.text();
-            let urlDoom = document.querySelector(".design-box__bottom");
-            urlDoom.innerHTML = text;
-        }
-
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
-    //Карман
+    if (attr == "front") {
+        designItem = ".design-box__length"
+        choiceElem[attr] = [item, title, true, price];
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
+    }
     if (attr == "pocket") {
+        designItem = ".design-box__pocket"
         choiceElem[attr] = [item, title, true, price];
-        let pocketItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/pocket/${choiceElem[attr][0]}.svg`);
-        choiceTitle("Карман: ", choiceElem[attr][1]);
-        if (pocketItem.ok) {
-            let text = await pocketItem.text();
-            let urlDoom = document.querySelector(".design-box__pocket");
-            urlDoom.innerHTML = text;
-        }
-
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
-    //Манжеты
-    if (attr == "cuff") {
+    if (attr == "bottom") {
+        designItem = ".design-box__bottom"
         choiceElem[attr] = [item, title, true, price];
-        let cuffItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/cuff/${choiceElem[attr][0]}.svg`);
-        choiceTitle("Манжеты: ", choiceElem[attr][1]);
-        if (cuffItem.ok) {
-            let text = await cuffItem.text();
-            let urlDoom = document.querySelector(".design-box__cuff");
-            urlDoom.innerHTML = text;
-        }
-
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
-    //Капюшон
     if (attr == "hood") {
+        designItem = ".design-box__hood"
+        designItemHood = ".design-box__hood-person"
         choiceElem[attr] = [item, title, true, price];
-        let hoodItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/hood/${choiceElem[attr][0]}.svg`);
-        let hoodPersonItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/hood-person/${choiceElem[attr][0]}.svg`);
-        choiceTitle("Капюшон: ", choiceElem[attr][1]);
-        if (hoodItem.ok) {
-            let text = await hoodItem.text();
-            let urlDoom = document.querySelector(".design-box__hood");
-            urlDoom.innerHTML = text;
-        }
-        if (hoodPersonItem.ok) {
-            let text = await hoodPersonItem.text();
-            let urlDoom = document.querySelector(".design-box__hood-person");
-            urlDoom.innerHTML = text;
-        }
-        if (item == "s-molniyey-sboku" || item == "na-molnii") {
-            document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.remove("disable");
-            document.querySelector(".choice [data-choice=fastener]").parentNode.classList.remove("disable");
-
-        }
-        else {
-            document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.add("disable");
-            document.querySelector(".choice [data-choice=fastener]").parentNode.classList.add("disable");
-        }
+        style = document.querySelector('style');
+        style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        style.innerHTML += `${designItemHood} .color-shadow-dark, ${designItemHood} .color-shadow, ${designItemHood} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
-    //Молния
-    if (attr == "fastener") {
+    if (attr == "back") {
         choiceElem[attr] = [item, title, true, price];
-        choiceTitle("Цвет молнии: ", choiceElem[attr][1]);
+        choiceTitle("Цвет: ", choiceElem[attr][1]);
     }
     //Начес
     if (attr == "cloth") {
@@ -432,21 +297,6 @@ async function choiceActive() {
     document.querySelector(".owl-item.active.center").classList.add("check");
     //Прогресс
     progres();
-    //проверки на на детали по параметрам
-    if (choiceElem["length"][0] == "short") {
-        document.querySelector("[data-item=bokovie]").classList.add("none")
-    } else {
-        document.querySelector("[data-item=bokovie]").classList.remove("none")
-    }
-    if (choiceElem["length"][0] == "krop") {
-        document.querySelector("[data-choice=bottom] [data-item=oborka]").classList.add("none")
-        document.querySelector("[data-choice=bottom] [data-item=shirokiy-manzhet]").classList.add("none")
-        document.querySelector("[data-choice=bottom] [data-item=kashkorse]").classList.add("none")
-    } else {
-        document.querySelector("[data-choice=bottom] [data-item=oborka]").classList.remove("none")
-        document.querySelector("[data-choice=bottom] [data-item=shirokiy-manzhet]").classList.remove("none")
-        document.querySelector("[data-choice=bottom] [data-item=kashkorse]").classList.remove("none")
-    }
     basePriceHTML();
     cookieAdd();
 }
@@ -544,17 +394,17 @@ function clickPrevNone() {
 
 
 
-//Пишем куки
+// //Пишем куки
 function cookieAdd() {
     let choiceSetJson = JSON.stringify(choiceElem);
     setCookie('hudi', choiceSetJson, { expires: Date(14) });
 }
-//Заполняем прогресс констуктора из кук
+// //Заполняем прогресс констуктора из кук
 async function startHudi() {
     for (let key in choiceElem) {
         if (choiceElem[key][2]) {
             //навигация
-            let elem = document.querySelector(`.parameters-box__head [data-hash*=${key}]`).parentNode
+            let elem = document.querySelector(`.parameters-box__head [data-hash*=${key}]`).parentNode;
             elem.classList.add("check");
         }
         //что выбрано елементы
@@ -565,144 +415,120 @@ async function startHudi() {
                 element.classList.add("active")
             }
         });
-    }
-
-    //собираем svg
-    let style = document.querySelector('style');
-    style.innerHTML = `.color-shadow-dark, .color-shadow, .color-base {fill: ${choiceElem["color"][0]}; stroke: ${choiceElem["color"][0]};}`;
-    let bottomItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/bottom/${choiceElem["length"][0]}/${choiceElem["bottom"][0]}.svg`),
-        lengthItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/length/${choiceElem["length"][0]}.svg`),
-        pocketItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/pocket/${choiceElem["pocket"][0]}.svg`),
-        cuffItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/cuff/${choiceElem["cuff"][0]}.svg`),
-        hoodItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/hood/${choiceElem["hood"][0]}.svg`),
-        hoodPersonItem = await fetch(`./img/svg/gerl/${choiceElem["cut"][0]}/hood-person/${choiceElem["hood"][0]}.svg`),
+        //Стили
+        let style = document.querySelector('style'),
+            attr = key;
+        if (attr == "sleeve-left") {
+            let designItem = ".design-box__sleeve_left";
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "sleeve-right") {
+            designItem = ".design-box__sleeve_right"
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "cuff-left") {
+            designItem = ".design-box__cuff_left"
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "cuff-right") {
+            designItem = ".design-box__cuff_right"
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "front") {
+            designItem = ".design-box__length"
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "pocket") {
+            designItem = ".design-box__pocket"
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "bottom") {
+            designItem = ".design-box__bottom"
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        if (attr == "hood") {
+            designItem = ".design-box__hood";
+            designItemHood = ".design-box__hood-person";
+            style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+            style.innerHTML += `${designItemHood} .color-shadow-dark, ${designItemHood} .color-shadow, ${designItemHood} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
+        }
+        //загружаем SVG
         hoodLegs = await fetch(`./img/svg/gerl/legs.svg`);
-    hudiLogo = await fetch(`./img/svg/gerl/logo.svg`);
-    //Проверка на кроп
-    if (choiceElem["length"][0] == "krop") {
-        document.querySelector(".parameters-box__head [data-hash=pocket]").parentNode.classList.add("disable");
-        document.querySelector(".choice [data-choice=pocket]").parentNode.classList.add("disable");
-    } else {
-        document.querySelector(".parameters-box__head [data-hash=pocket]").parentNode.classList.remove("disable");
-        document.querySelector(".choice [data-choice=pocket]").parentNode.classList.remove("disable");
-    }
-    //Проверка на молнию
-    if (choiceElem["hood"][0] == "s-molniyey-sboku" || choiceElem["hood"][0] == "na-molnii") {
-        document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.remove("disable");
-        document.querySelector(".choice [data-choice=fastener]").parentNode.classList.remove("disable");
-    } else {
-        document.querySelector(".parameters-box__head [data-hash=fastener]").parentNode.classList.add("disable");
-        document.querySelector(".choice [data-choice=fastener]").parentNode.classList.add("disable");
-    }
-    //Проверка на длину
-    if (choiceElem["length"][0] == "short") {
-        document.querySelector("[data-item=bokovie]").classList.add("none")
-    }
-    if (choiceElem["length"][0] == "krop") {
-        document.querySelector("[data-choice=bottom] [data-item=oborka]").classList.add("none")
-        document.querySelector("[data-choice=bottom] [data-item=shirokiy-manzhet]").classList.add("none")
-        document.querySelector("[data-choice=bottom] [data-item=kashkorse]").classList.add("none")
-    }
-    //
-    if (bottomItem.ok) {
-        let text = await bottomItem.text();
-        let urlDoom = document.querySelector(".design-box__bottom");
-        urlDoom.innerHTML = text;
-    }
-    if (lengthItem.ok) {
-        let text = await lengthItem.text();
-        let urlDoom = document.querySelector(".design-box__length");
-        urlDoom.innerHTML = text;
-    }
-    if (pocketItem.ok) {
-        let text = await pocketItem.text();
-        let urlDoom = document.querySelector(".design-box__pocket");
-        urlDoom.innerHTML = text;
-    }
-    if (cuffItem.ok) {
-        let text = await cuffItem.text();
-        let urlDoom = document.querySelector(".design-box__cuff");
-        urlDoom.innerHTML = text;
-    }
-    if (hoodItem.ok) {
-        let text = await hoodItem.text();
-        let urlDoom = document.querySelector(".design-box__hood");
-        urlDoom.innerHTML = text;
-    }
-    if (hoodPersonItem.ok) {
-        let text = await hoodPersonItem.text();
-        let urlDoom = document.querySelector(".design-box__hood-person");
-        urlDoom.innerHTML = text;
-    }
-    if (hoodLegs.ok) {
-        let text = await hoodLegs.text();
-        let urlDoom = document.querySelector(".design-box__legs");
-        urlDoom.innerHTML = text;
-    }
-    if (hudiLogo.ok) {
-        let text = await hudiLogo.text();
-        let urlDoom = document.querySelector(".design-box__logo");
-        urlDoom.innerHTML = text;
+        hudiLogo = await fetch(`./img/svg/gerl/logo.svg`);
+        cuffLeft = await fetch(`./img/svg/gerl/cuff-left.svg`);
+        cuffRight = await fetch(`./img/svg/gerl/cuff-right.svg`);
+        sleeveLeft = await fetch(`./img/svg/gerl/sleeve-left.svg`);
+        sleeveRight = await fetch(`./img/svg/gerl/sleeve-right.svg`);
+        sleeveRight = await fetch(`./img/svg/gerl/sleeve-right.svg`);
+        hudiLength = await fetch(`./img/svg/gerl/length.svg`);
+        hudiBottom = await fetch(`./img/svg/gerl/bottom.svg`);
+        hudiPocket = await fetch(`./img/svg/gerl/pocket.svg`);
+        hudiHood = await fetch(`./img/svg/gerl/hood.svg`);
+        hudiHoodPerson = await fetch(`./img/svg/gerl/hood-person.svg`);
+
+        if (hudiLogo.ok) {
+            let text = await hudiLogo.text();
+            let urlDoom = document.querySelector(".design-box__logo");
+            urlDoom.innerHTML = text;
+        }
+        if (hoodLegs.ok) {
+            let text = await hoodLegs.text();
+            let urlDoom = document.querySelector(".design-box__legs");
+            urlDoom.innerHTML = text;
+        }
+        if (cuffLeft.ok) {
+            let text = await cuffLeft.text();
+            let urlDoom = document.querySelector(".design-box__cuff_left");
+            urlDoom.innerHTML = text;
+        }
+        if (cuffRight.ok) {
+            let text = await cuffRight.text();
+            let urlDoom = document.querySelector(".design-box__cuff_right");
+            urlDoom.innerHTML = text;
+        }
+        if (sleeveLeft.ok) {
+            let text = await sleeveLeft.text();
+            let urlDoom = document.querySelector(".design-box__sleeve_left");
+            urlDoom.innerHTML = text;
+        }
+        if (sleeveRight.ok) {
+            let text = await sleeveRight.text();
+            let urlDoom = document.querySelector(".design-box__sleeve_right");
+            urlDoom.innerHTML = text;
+        }
+        if (hudiLength.ok) {
+            let text = await hudiLength.text();
+            let urlDoom = document.querySelector(".design-box__length");
+            urlDoom.innerHTML = text;
+        }
+        if (hudiBottom.ok) {
+            let text = await hudiBottom.text();
+            let urlDoom = document.querySelector(".design-box__bottom");
+            urlDoom.innerHTML = text;
+        }
+        if (hudiHood.ok) {
+            let text = await hudiHood.text();
+            let urlDoom = document.querySelector(".design-box__hood");
+            urlDoom.innerHTML = text;
+        }
+        if (hudiHoodPerson.ok) {
+            let text = await hudiHoodPerson.text();
+            let urlDoom = document.querySelector(".design-box__hood-person");
+            urlDoom.innerHTML = text;
+        }
+        if (hudiPocket.ok) {
+            let text = await hudiPocket.text();
+            let urlDoom = document.querySelector(".design-box__pocket");
+            urlDoom.innerHTML = text;
+        }
     }
 }
 startHudi();
 progres();
 
-//рандом
-let randomBtn = document.getElementById("random-btn");
-randomBtn.onclick = randomHudi;
-function randomHudi() {
-    for (let key in parametersAllArr) {
-        let element = parametersAllArr[key];
-        let randomNum = Math.floor(Math.random() * element.length);
-        if (choiceElem[key]) {
-            for (let index = 0; index < choiceElem[key].length; index++) {
-                choiceElem[key][index] = element[randomNum][index]
-            }
-        }
-    }
-    if (choiceElem["length"][0] === "krop") {
-        choiceElem["pocket"][0] = "pocket-no";
-        let randomBottom = Math.floor(Math.random() * parametersAllArr["bottomKrop"].length);
-        for (let index = 0; index < parametersAllArr["bottomKrop"].length; index++) {
 
-            choiceElem["bottom"][index] = parametersAllArr["bottomKrop"][randomBottom][index]
-        }
-    }
-    if (choiceElem["length"][0] === "short" && choiceElem["pocket"][0] === "bokovie") {
-        choiceElem["pocket"][0] = "kenguru";
-    }
-    startHudi();
-    basePriceHTML();
-    cookieAdd();
-}
-//меняем цвет
-let areaColor = document.querySelector(".design-box");
 
-areaColor.addEventListener('dblclick', nextColor);
-function nextColor() {
-    let colorArr = parametersAllArr["color"],
-        colorItem = choiceElem["color"];
-    for (let index = 0; index < colorArr.length; index++) {
-        if (colorItem[0] == colorArr[index][0]) {
-            if (index == (colorArr.length - 1)) {
-                for (let i = 0; i < colorItem.length; i++) {
-                    return colorItem[i] = colorArr[0][i]
-                }
-                break
 
-            } else {
-                for (let i = 0; i < colorItem.length; i++) {
-                    colorItem[i] = colorArr[index + 1][i];
-                }
-                break
-            }
-        }
-    }
-    startHudi();
-    basePriceHTML();
-    cookieAdd();
-}
 //hover подсказка
 let choiceImgArr = document.querySelectorAll(".choice-img li"),
     choiceImgInfo;

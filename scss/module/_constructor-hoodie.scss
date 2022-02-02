@@ -51,6 +51,7 @@
         font-weight: 500;
         font-size: $font-m;
         border: 2px solid $palete-base;
+        white-space: nowrap;
 
         @media screen and (max-width: 350px) {
             font-size: $font-s;
@@ -196,7 +197,6 @@
         z-index: 10;
 
         @media screen and (max-width: 1000px) {
-            bottom: -35px;
             left: -27px;
             margin-bottom: 0;
         }
@@ -226,7 +226,7 @@
 
         @media screen and (max-width: 1000px) {
             width: 100%;
-            height: calc(100% - 300px);
+            height: calc(100% - 265px);
             display: flex;
         }
 
@@ -523,8 +523,61 @@
                 .owl-stage {
                     @media screen and (min-width: 1000px) {
                         display: grid;
-                        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                        // grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                        grid-template-columns: repeat(12, 3fr);
                     }
+                }
+
+                .owl-item:nth-child(1) {
+                    grid-column: span 6;
+                }
+
+                .owl-item:nth-child(2) {
+                    grid-column: span 6;
+                }
+
+                .owl-item:nth-child(3) {
+                    grid-column: span 4;
+                }
+
+                .owl-item:nth-child(4) {
+                    grid-column: span 4;
+                }
+
+                .owl-item:nth-child(5) {
+                    grid-column: span 4;
+                }
+
+                .owl-item:nth-child(6) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(7) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(8) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(9) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(10) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(11) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(12) {
+                    grid-column: span 3;
+                }
+
+                .owl-item:nth-child(13) {
+                    grid-column: span 3;
                 }
 
                 .check {
@@ -600,7 +653,7 @@
                     border: 2px solid $palete-light-second;
                     display: flex;
                     justify-content: center;
-                    padding: 6px 16px;
+                    padding: 6px 2px;
                     border-radius: $radius;
                     text-transform: lowercase;
                     font-weight: 500;
@@ -648,13 +701,12 @@
                 }
 
                 .choice {
-                    // height: 101%;
                     display: flex;
                     flex-direction: column;
                     padding: 20px;
                     padding-top: 10px;
                     padding-bottom: 0;
-                    height: calc(100vh - 300px);
+                    height: calc(100vh - 375px);
                     overflow-y: auto;
                     padding-right: 10px;
                     margin-right: 8px;
@@ -1363,7 +1415,7 @@
 
                         b {
                             display: inline-flex;
-                            width: 86px
+                            width: 140px
                         }
                     }
                 }
@@ -1421,10 +1473,6 @@
                 display: flex;
                 flex-direction: column;
                 overflow-y: auto;
-
-                @media screen and (max-width: 1000px) {
-                    background: $palete-light;
-                }
 
                 @media screen and (max-width: 1000px) {
                     width: 100%;
@@ -1609,6 +1657,7 @@
                     display: flex;
                     justify-content: center;
                     margin-top: 20px;
+                    white-space: nowrap;
 
                     @media screen and (max-width: 1000px) {
                         bottom: 0;
