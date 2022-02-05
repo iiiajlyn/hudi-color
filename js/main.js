@@ -46,34 +46,34 @@ $('.parameters-box__main').owlCarousel({
 //массив со всеми параметрами для рандома
 let parametersAllArr = {
     color: [
-        ["#000000", "Черный", false, 0],
-        ["#804E82", "Фиолет", false, 0],
-        ["#E4CAF1", "Лаванда", false, 0],
-        ["#FDD9E8", "Маршмеллоу", false, 0],
-        ["#E5CCAE", "Песок", false, 0],
-        ["#997D68", "Кофе", false, 0],
-        ["#FFFFFF", "Белый", false, 1000],
-        ["#BAC1BF", "Дымчатый", false, 1000],
-        ["#57555A", "Графит", false, 1000],
-        ["#E42C36", "Красный", false, 1000],
-        ["#FE6203", "Хеллуин", false, 1000],
-        ["#FFE270", "Желтый", false, 1000],
-        ["#F2EC7A", "Лимонный", false, 1000],
-        ["#E33D85", "Фуксия", false, 1000],
-        ["#74C86A", "Лайм", false, 1000],
-        ["#64762C", "Хаки", false, 1000],
-        ["#97A38F", "Оливка", false, 1000],
-        ["#1F9480", "Изумруд", false, 1000],
-        ["#B3E2D8", "Тиффани", false, 1000],
-        ["#2E4393", "Синий", false, 1000],
-        ["#83A3EC", "Голубой", false, 1000],
-        ["#BB847F", "Пыльная роза", false, 1000],
-        ["#A2BEEE", "Пыльный деним", false, 1500],
-        ["#91B4B8", "Снежная мята", false, 1500],
-        ["#EDBFC1", "Персик", false, 1500],
-        ["#FDAE97", "Коралл", false, 1500],
-        ["#E2E4E6", "Молочный меланж", false, 1500],
-        ["#E5E4EA", "Тофу", false, 1500],
+        ["#000000", "Черный", true, 0],
+        ["#804E82", "Фиолет", true, 0],
+        ["#E4CAF1", "Лаванда", true, 0],
+        ["#FDD9E8", "Маршмеллоу", true, 0],
+        ["#E5CCAE", "Песок", true, 0],
+        ["#997D68", "Кофе", true, 0],
+        ["#FFFFFF", "Белый", true, 0],
+        ["#BAC1BF", "Дымчатый", true, 0],
+        ["#57555A", "Графит", true, 0],
+        ["#E42C36", "Красный", true, 0],
+        ["#FE6203", "Хеллуин", true, 0],
+        ["#FFE270", "Желтый", true, 0],
+        ["#F2EC7A", "Лимонный", true, 0],
+        ["#E33D85", "Фуксия", true, 0],
+        ["#74C86A", "Лайм", true, 0],
+        ["#64762C", "Хаки", true, 0],
+        ["#97A38F", "Оливка", true, 0],
+        ["#1F9480", "Изумруд", true, 0],
+        ["#B3E2D8", "Тиффани", true, 0],
+        ["#2E4393", "Синий", true, 0],
+        ["#83A3EC", "Голубой", true, 0],
+        ["#BB847F", "Пыльная роза", true, 0],
+        ["#A2BEEE", "Пыльный деним", true, 0],
+        ["#91B4B8", "Снежная мята", true, 0],
+        ["#EDBFC1", "Персик", true, 0],
+        ["#FDAE97", "Коралл", true, 0],
+        ["#E2E4E6", "Молочный меланж", true, 0],
+        ["#E5E4EA", "Тофу", true, 0],
     ],
 }
 //Добавляем класс .human
@@ -103,8 +103,8 @@ function animAdd() {
 }
 
 //Активируем кнопки вперед назад красим пройденые пути а также где мы находимся
-//let btnNext = document.querySelector('.parameters-progress .btn_next'),
-let lineProgress = document.querySelector('.parameters-progress__line-activ'),
+let btnNext = document.querySelector('.btn_next'),
+    lineProgress = document.querySelector('.parameters-progress__line-activ'),
     owlNext = document.querySelector('.owl-nav .owl-next'),
     owlPrev = document.querySelector('.owl-nav .owl-prev')
 owlNext.classList.add('disable')
@@ -115,8 +115,9 @@ owlPrev.addEventListener('click', disableAdd)
 
 function disableAdd() {
     owlNext.classList.add('disable')
-    //btnNext.classList.add('disable')
+    //  btnNext.classList.add('disable')
 }
+
 //Шкала прогресса
 function progres() {
     let progresCheck = document.querySelectorAll(".parameters-box__head .owl-item"),
@@ -133,12 +134,17 @@ function progres() {
     lineProgress.style.width = hudiProgress + "%";
 
     if (progresOccupancy) {
-        finishBtn.classList.remove("disable")
+        //  finishBtn.classList.remove("disable")
+        btnNext.classList.add("none");
+        let btnCart = document.querySelector(".btn_ico_cart");
+        btnCart.classList.add("active");
+        btnCart.classList.remove("disable");
+
     }
 }
 //Формирование цены
-let basePrice = 2990,
-    finalPrice = 2990,
+let basePrice = 4990,
+    finalPrice = 4990,
     basePriceElem = document.querySelector(".parameters-box__footer .price span");
 function basePriceHTML() {
     let priceItem = basePrice;
@@ -148,7 +154,7 @@ function basePriceHTML() {
         }
         priceItem += Number(choiceElem[key][3]);
         finalPrice = priceItem;
-        basePriceElem.innerHTML = new Intl.NumberFormat('ru-RU').format(priceItem);
+        basePriceElem.innerHTML = new Intl.NumberFormat('ru-RU').format(basePrice);
     }
 }
 // Параметры по умолчанию
@@ -156,7 +162,7 @@ function basePriceHTML() {
 let choiceElem,
     zipper = false,
     itemNum = 0,
-    choiceGetJson = getCookie('hudi', json = true),
+    choiceGetJson = getCookie('hudiColor', json = true),
     choiceKeyRu = {
         color: ["Цвет"],
         cut: ["Крой"],
@@ -189,6 +195,7 @@ if (choiceGetJson) {
         back: ["#997D68", "Кофе", false, 0],
         hood: ["#997D68", "Кофе", false, 0],
         pocket: ["#997D68", "Кофе", false, 0],
+        bottom: ["#997D68", "Кофе", false, 0],
         cloth: ["yes", "С начесом - теплый", false, 0],
         embroidery: ["no", "Не выбран", false, 0],
         size: ["no", "Не выбран", false, 0],
@@ -208,7 +215,7 @@ async function choiceActive(param = false) {
     }
     this.classList.add("active");
 
-    //btnNext.classList.remove("disable");
+    btnNext.classList.remove("disable");
     owlNext.classList.remove('disable');
     //Цвет
     if (attr == "sleeve-left") {
@@ -371,11 +378,24 @@ function modalDel() {
 }
 // Go to the next item
 
-$('.btn_next').click(clickNextNone);
+$('.btn_next').click(clickNext);
 $('.owl-nav .owl-next').click(clickNextNone);
 $('.owl-nav .owl-prev').click(clickPrevNone);
 
+function clickNext() {
+    let slide = document.querySelector(".owl-item.active.center").children[0]
+    if (slide.dataset.hash == "growth") {
+        btnNext.classList.add("none");
+        let btnCart = document.querySelector(".btn_ico_cart");
+        btnCart.classList.add("active")
+        btnCart.classList.remove("disable")
+    } else {
+        $('.parameters-box__head').trigger('next.owl.carousel', [200]);
+        $('.parameters-box__main').trigger('next.owl.carousel', [200]);
+    }
+}
 function clickNextNone() {
+
     setTimeout(function () {
         if (document.querySelector(".owl-item.active.center").classList.contains("disable")) {
             $('.parameters-box__head').trigger('next.owl.carousel', [200]);
@@ -394,13 +414,14 @@ function clickPrevNone() {
 
 
 
-// //Пишем куки
+
+//Пишем куки
 function cookieAdd() {
     let choiceSetJson = JSON.stringify(choiceElem);
-    setCookie('hudi', choiceSetJson, { expires: Date(14) });
+    setCookie('hudiColor', choiceSetJson, { expires: Date(14) });
 }
-// //Заполняем прогресс констуктора из кук
-async function startHudi() {
+//Заполняем прогресс констуктора из кук
+function startHudi() {
     for (let key in choiceElem) {
         if (choiceElem[key][2]) {
             //навигация
@@ -452,81 +473,97 @@ async function startHudi() {
             style.innerHTML += `${designItem} .color-shadow-dark, ${designItem} .color-shadow, ${designItem} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
             style.innerHTML += `${designItemHood} .color-shadow-dark, ${designItemHood} .color-shadow, ${designItemHood} .color-base {fill: ${choiceElem[attr][0]}; stroke: ${choiceElem[attr][0]};}`;
         }
-        //загружаем SVG
-        hoodLegs = await fetch(`./img/svg/gerl/legs.svg`);
-        hudiLogo = await fetch(`./img/svg/gerl/logo.svg`);
-        cuffLeft = await fetch(`./img/svg/gerl/cuff-left.svg`);
-        cuffRight = await fetch(`./img/svg/gerl/cuff-right.svg`);
-        sleeveLeft = await fetch(`./img/svg/gerl/sleeve-left.svg`);
-        sleeveRight = await fetch(`./img/svg/gerl/sleeve-right.svg`);
-        sleeveRight = await fetch(`./img/svg/gerl/sleeve-right.svg`);
-        hudiLength = await fetch(`./img/svg/gerl/length.svg`);
-        hudiBottom = await fetch(`./img/svg/gerl/bottom.svg`);
-        hudiPocket = await fetch(`./img/svg/gerl/pocket.svg`);
-        hudiHood = await fetch(`./img/svg/gerl/hood.svg`);
-        hudiHoodPerson = await fetch(`./img/svg/gerl/hood-person.svg`);
 
-        if (hudiLogo.ok) {
-            let text = await hudiLogo.text();
-            let urlDoom = document.querySelector(".design-box__logo");
-            urlDoom.innerHTML = text;
-        }
-        if (hoodLegs.ok) {
-            let text = await hoodLegs.text();
-            let urlDoom = document.querySelector(".design-box__legs");
-            urlDoom.innerHTML = text;
-        }
-        if (cuffLeft.ok) {
-            let text = await cuffLeft.text();
-            let urlDoom = document.querySelector(".design-box__cuff_left");
-            urlDoom.innerHTML = text;
-        }
-        if (cuffRight.ok) {
-            let text = await cuffRight.text();
-            let urlDoom = document.querySelector(".design-box__cuff_right");
-            urlDoom.innerHTML = text;
-        }
-        if (sleeveLeft.ok) {
-            let text = await sleeveLeft.text();
-            let urlDoom = document.querySelector(".design-box__sleeve_left");
-            urlDoom.innerHTML = text;
-        }
-        if (sleeveRight.ok) {
-            let text = await sleeveRight.text();
-            let urlDoom = document.querySelector(".design-box__sleeve_right");
-            urlDoom.innerHTML = text;
-        }
-        if (hudiLength.ok) {
-            let text = await hudiLength.text();
-            let urlDoom = document.querySelector(".design-box__length");
-            urlDoom.innerHTML = text;
-        }
-        if (hudiBottom.ok) {
-            let text = await hudiBottom.text();
-            let urlDoom = document.querySelector(".design-box__bottom");
-            urlDoom.innerHTML = text;
-        }
-        if (hudiHood.ok) {
-            let text = await hudiHood.text();
-            let urlDoom = document.querySelector(".design-box__hood");
-            urlDoom.innerHTML = text;
-        }
-        if (hudiHoodPerson.ok) {
-            let text = await hudiHoodPerson.text();
-            let urlDoom = document.querySelector(".design-box__hood-person");
-            urlDoom.innerHTML = text;
-        }
-        if (hudiPocket.ok) {
-            let text = await hudiPocket.text();
-            let urlDoom = document.querySelector(".design-box__pocket");
-            urlDoom.innerHTML = text;
-        }
     }
 }
+async function startSVG() {
+    //загружаем SVG
+    hoodLegs = await fetch(`./img/svg/gerl/legs.svg`);
+    hudiLogo = await fetch(`./img/svg/gerl/logo.svg`);
+    cuffLeft = await fetch(`./img/svg/gerl/cuff-left.svg`);
+    cuffRight = await fetch(`./img/svg/gerl/cuff-right.svg`);
+    sleeveLeft = await fetch(`./img/svg/gerl/sleeve-left.svg`);
+    sleeveRight = await fetch(`./img/svg/gerl/sleeve-right.svg`);
+    sleeveRight = await fetch(`./img/svg/gerl/sleeve-right.svg`);
+    hudiLength = await fetch(`./img/svg/gerl/length.svg`);
+    hudiBottom = await fetch(`./img/svg/gerl/bottom.svg`);
+    hudiPocket = await fetch(`./img/svg/gerl/pocket.svg`);
+    hudiHood = await fetch(`./img/svg/gerl/hood.svg`);
+    hudiHoodPerson = await fetch(`./img/svg/gerl/hood-person.svg`);
+
+    if (hudiLogo.ok) {
+        let text = await hudiLogo.text();
+        let urlDoom = document.querySelector(".design-box__logo");
+        urlDoom.innerHTML = text;
+    }
+    if (hoodLegs.ok) {
+        let text = await hoodLegs.text();
+        let urlDoom = document.querySelector(".design-box__legs");
+        urlDoom.innerHTML = text;
+    }
+    if (cuffLeft.ok) {
+        let text = await cuffLeft.text();
+        let urlDoom = document.querySelector(".design-box__cuff_left");
+        urlDoom.innerHTML = text;
+    }
+    if (cuffRight.ok) {
+        let text = await cuffRight.text();
+        let urlDoom = document.querySelector(".design-box__cuff_right");
+        urlDoom.innerHTML = text;
+    }
+    if (sleeveLeft.ok) {
+        let text = await sleeveLeft.text();
+        let urlDoom = document.querySelector(".design-box__sleeve_left");
+        urlDoom.innerHTML = text;
+    }
+    if (sleeveRight.ok) {
+        let text = await sleeveRight.text();
+        let urlDoom = document.querySelector(".design-box__sleeve_right");
+        urlDoom.innerHTML = text;
+    }
+    if (hudiLength.ok) {
+        let text = await hudiLength.text();
+        let urlDoom = document.querySelector(".design-box__length");
+        urlDoom.innerHTML = text;
+    }
+    if (hudiBottom.ok) {
+        let text = await hudiBottom.text();
+        let urlDoom = document.querySelector(".design-box__bottom");
+        urlDoom.innerHTML = text;
+    }
+    if (hudiHood.ok) {
+        let text = await hudiHood.text();
+        let urlDoom = document.querySelector(".design-box__hood");
+        urlDoom.innerHTML = text;
+    }
+    if (hudiHoodPerson.ok) {
+        let text = await hudiHoodPerson.text();
+        let urlDoom = document.querySelector(".design-box__hood-person");
+        urlDoom.innerHTML = text;
+    }
+    if (hudiPocket.ok) {
+        let text = await hudiPocket.text();
+        let urlDoom = document.querySelector(".design-box__pocket");
+        urlDoom.innerHTML = text;
+    }
+}
+startSVG()
 startHudi();
 progres();
 
-
+//рандом
+let randomBtn = document.getElementById("random-btn"),
+    randomElem = ["sleeve-left", "sleeve-right", "cuff-right", "cuff-left", "front", "back", "hood", "pocket", "bottom"];
+randomBtn.onclick = randomHudi;
+function randomHudi() {
+    for (let key in randomElem) {
+        //console.log(parametersAllArr["color"][numRandom]);
+        numRandom = Math.floor(Math.random() * parametersAllArr["color"].length);
+        choiceElem[randomElem[key]] = parametersAllArr["color"][numRandom];
+    }
+    startHudi();
+    cookieAdd();
+}
 
 
 //hover подсказка
@@ -553,3 +590,50 @@ function choiceImginfoAdd() {
 function choiceImginfoDel() {
     this.removeChild(choiceImgInfo)
 }
+//-------
+function calc_total(length, summa) {
+
+    if ("yes" == window.tcart_initted) {
+        window.tcart.amount = summa;
+        window.tcart.prodamount = summa;
+        window.tcart.total = summa;
+
+        window.tcart.products[0] = {
+            amount: summa,
+            name: 'Услуга по пошиву ' + length,
+            price: summa,
+            quantity: 1
+        };
+        return
+    } else {
+        var cart_main_div = $(".t706").parent("div").attr("id");
+        var div_num = cart_main_div.slice(3);
+        t_onFuncLoad('tcart__init', function () {
+            tcart__init(div_num, '');
+            setTimeout(calc_total(length, summa), 200)
+        });
+    }
+
+}
+//отправка статистики
+
+function closeIt() {
+    var linkClick = false;
+    $("a").bind("click", () => {
+        linkClick = true;
+    });
+
+    window.onbeforeunload = () => {
+        if (!linkClick) {
+            localStorage.status = 'Закрыли вкладку';
+        }
+    };
+    if (!sessionStorage.getItem('status')) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '../statistics.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send('statistics=' + encodeURIComponent(choiceGetJson));
+        e.preventDefault();
+    }
+}
+window.onbeforeunload = closeIt;

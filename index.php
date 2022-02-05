@@ -22,6 +22,13 @@
                     <div class="clothes"><img src='./img/ico-1.png' alt='img' srcset='./img/svg/ico-1.svg'></div>
                     <div class="person"><img src='./img/ico-2.png' alt='img' srcset='./img/svg/ico-2.svg'></div>
                 </div>
+                <div class="hoodie-nav_bottom">
+                    <div id="random-btn">
+
+                        <p>Мне повезет</p>
+                    </div>
+                    <!-- <div class="clue">?</div> -->
+                </div>
                 <div class="title-choice title-anim">
                     <p><span></span> <b>Всего 10 простых шагов<br>и худи твое!</b></p>
                 </div>
@@ -522,9 +529,6 @@
                                     <li data-item="L">
                                         <p>l</p>
                                     </li>
-                                    <li data-item="X">
-                                        <p>x</p>
-                                    </li>
                                     <li data-item="XL">
                                         <p>xl</p>
                                     </li>
@@ -581,9 +585,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="choice" data-hash="finish">
 
-                        </div>
                     </div>
                     <div class="parameters-box__footer">
                         <div class="parameters-progress">
@@ -591,8 +593,13 @@
                                 <div class="parameters-progress__line-activ" style="width: 0%;"></div>
                             </div>
                         </div>
-                        <p class="price"><span>2 990</span><i> 14 990 ₽</i></p>
-                        <div class="btn_ico_cart disable" data-modal="form">В корзину</div>
+                        <p class="price"><span>4 990</span><i> 14 990 ₽</i></p>
+                        <div class="btn-box">
+                            <div id="btn_next" class="btn_next">Далее</div>
+                            <div class="btn_ico_cart disable" data-modal="form">
+                                <p>В корзину</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
