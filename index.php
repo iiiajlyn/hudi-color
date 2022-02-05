@@ -123,28 +123,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -159,28 +159,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -195,28 +195,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -231,28 +231,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -267,28 +267,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -303,28 +303,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -339,28 +339,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -375,28 +375,28 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
@@ -411,35 +411,35 @@
                                     <li data-title="Кофе" data-item="#997D68" style="background-color: #997D68"></li>
                                 </ul>
                                 <ul class="choice-color__price">
-                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF" data-price="1000"></li>
-                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;" data-price="1000"></li>
-                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A" data-price="1000"></li>
-                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36" data-price="1000"></li>
-                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203" data-price="1000"></li>
-                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270" data-price="1000"></li>
-                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A" data-price="1000"></li>
-                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85" data-price="1000"></li>
-                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A" data-price="1000"></li>
-                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C" data-price="1000"></li>
-                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F" data-price="1000"></li>
-                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480" data-price="1000"></li>
-                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8" data-price="1000"></li>
-                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393" data-price="1000"></li>
-                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC" data-price="1000"></li>
-                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F" data-price="1000"></li>
-                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE" data-price="1500"></li>
-                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8" data-price="1500"></li>
-                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1" data-price="1500"></li>
-                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97" data-price="1500"></li>
-                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6" data-price="1500"></li>
-                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA" data-price="1500"></li>
+                                    <li data-title="Белый" data-item="#FFFFFF" style="background-color: #FFFFFF"></li>
+                                    <li data-title="Дымчатый" data-item="#BAC1BF" style="background-color: #BAC1BF;"></li>
+                                    <li data-title="Графит" data-item="#57555A" style="background-color: #57555A"></li>
+                                    <li data-title="Красный" data-item="#E42C36" style="background-color: #E42C36"></li>
+                                    <li data-title="Хеллуин" data-item="#FE6203" style="background-color: #FE6203"></li>
+                                    <li data-title="Желтый" data-item="#FFE270" style="background-color: #FFE270"></li>
+                                    <li data-title="Лимонный" data-item="#F2EC7A" style="background-color: #F2EC7A"></li>
+                                    <li data-title="Фуксия" data-item="#E33D85" style="background-color: #E33D85"></li>
+                                    <li data-title="Лайм" data-item="#74C86A" style="background-color: #74C86A"></li>
+                                    <li data-title="Хаки" data-item="#64762C" style="background-color: #64762C"></li>
+                                    <li data-title="Оливка" data-item="#97A38F" style="background-color: #97A38F"></li>
+                                    <li data-title="Изумруд" data-item="#1F9480" style="background-color: #1F9480"></li>
+                                    <li data-title="Тиффани" data-item="#B3E2D8" style="background-color: #B3E2D8"></li>
+                                    <li data-title="Синий" data-item="#2E4393" style="background-color: #2E4393"></li>
+                                    <li data-title="Голубой" data-item="#83A3EC" style="background-color: #83A3EC"></li>
+                                    <li data-title="Пыльная роза" data-item="#BB847F" style="background-color: #BB847F"></li>
+                                    <li data-title="Пыльный деним" data-item="#A2BEEE" style="background-color: #A2BEEE"></li>
+                                    <li data-title="Снежная мята" data-item="#91B4B8" style="background-color: #91B4B8"></li>
+                                    <li data-title="Персик" data-item="#EDBFC1" style="background-color: #EDBFC1"></li>
+                                    <li data-title="Коралл" data-item="#FDAE97" style="background-color: #FDAE97"></li>
+                                    <li data-title="Молочный меланж" data-item="#E2E4E6" style="background-color: #E2E4E6"></li>
+                                    <li data-title="Тофу" data-item="#E5E4EA" style="background-color: #E5E4EA"></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="choice" data-hash="cloth">
                             <div class="choice-img" data-choice="cloth">
                                 <ul class="choice-img__cloth">
-                                    <li data-item="no" data-title="Без начеса" data-price="1000">
+                                    <li data-item="no" data-title="Без начеса">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/cloth/img-1.webp">
                                             <img alt="img" src="./img/params/cloth/img-1.jpg">
@@ -472,31 +472,31 @@
                                             <img alt="img" src="./img/params/embroidery/img-3.jpg">
                                         </picture>
                                     </li>
-                                    <li data-item="na-grudi" data-title="Спереди на груди" data-price="300">
+                                    <li data-item="na-grudi" data-title="Спереди на груди">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/embroidery/img-6.webp">
                                             <img alt="img" src="./img/params/embroidery/img-6.jpg">
                                         </picture>
                                     </li>
-                                    <li data-item="na-kapushone" data-title="Hooli сбоку на капюшоне" data-price="300">
+                                    <li data-item="na-kapushone" data-title="Hooli сбоку на капюшоне">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/embroidery/img-1.webp">
                                             <img alt="img" src="./img/params/embroidery/img-1.jpg">
                                         </picture>
                                     </li>
-                                    <li data-item="s-zadi" data-title="Hooli сзади на лопатке" data-price="300">
+                                    <li data-item="s-zadi" data-title="Hooli сзади на лопатке">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/embroidery/img-2.webp">
                                             <img alt="img" src="./img/params/embroidery/img-2.jpg">
                                         </picture>
                                     </li>
-                                    <li data-item="kartinka" data-title="Печать своей картинки" data-price="2490">
+                                    <li data-item="kartinka" data-title="Печать своей картинки">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/embroidery/img-4.webp">
                                             <img alt="img" src="./img/params/embroidery/img-4.jpg">
                                         </picture>
                                     </li>
-                                    <li data-item="svoia-vyshivka" data-title="Своя вышивка" data-price="2490">
+                                    <li data-item="svoia-vyshivka" data-title="Своя вышивка">
                                         <picture>
                                             <source type="image/webp" srcset="./img/params/embroidery/img-5.webp">
                                             <img alt="img" src="./img/params/embroidery/img-5.jpg">
