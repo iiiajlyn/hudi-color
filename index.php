@@ -610,7 +610,6 @@
 
         </div>
     </div>
-    <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
     <script src="./js/main.min.js?v=<?= time() ?>"></script>
     <script src="./js/main.js?v=<?= time() ?>"></script>
 </body>

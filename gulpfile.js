@@ -26,6 +26,7 @@ function scriptsIndex() {
         'js/intlTelInput/intlTelInput.min.js',
         'js/jquery.maskedinput.min.js',
         'js/owl.carousel.min.js',
+        'js/cookie.min.js',
         //'js/main.js',
     ])
         .pipe(concat('main.min.js'))
