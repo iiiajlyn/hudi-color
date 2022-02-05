@@ -357,32 +357,6 @@ async function modalAdd() {
             if (typeof (window.ym) != "undefined") {
                 ym(66248908, 'reachGoal', 'quiz_finish')
             }
-            //второй кусок - вызываем событие закончили конструктор для я.метрики
-            function sendFacebookEvents(event, event_id, customData) {
-                var data_to_send = {
-                    "clientUserAgent": window.navigator.userAgent,
-                    "fbp": getCookie("_fbp"),
-                    "url": window.location.href,
-                    "event": event,
-                    "event_id": event_id,
-                    "customData": customData,
-                }
-                $.ajax({
-                    url: 'https://nautz.ru/api/facebook_test_test',
-                    type: 'post',
-                    dataType: 'json',
-                    data: data_to_send,
-                })
-                    .done(function (data) {
-
-                    })
-                    .fail(function (data) {
-                        // console.log("error");
-                    })
-                    .always(function () {
-                        // console.log("complete");
-                    });
-            }
         } else {
             modal.classList.remove("full");
         }
@@ -646,6 +620,66 @@ function calc_total(length, summa) {
     }
 
 }
+function sendFacebookEvents(event,event_id,customData){
+    var data_to_send = {
+        "clientUserAgent":window.navigator.userAgent,
+        "fbp":getCookie("_fbp"),
+        "url":window.location.href,
+        "event":event,
+        "event_id":event_id,
+        "customData":customData,
+    }
+    $.ajax({
+        url: 'https://nautz.ru/api/facebook_test_test',
+        type: 'post',
+        dataType: 'json',
+        data: data_to_send,
+    })
+    .done(function(data) {
+        
+    })
+    .fail(function(data) {
+        // console.log("error");
+    })
+    .always(function() {
+        // console.log("complete");
+    });
+}
+// зашли на страницу
+var pv = 0
+if(pv==0){
+    var date_for_event = new Date();
+    var eventId = "mev"+date_for_event.getTime();
+    if(typeof(fbq)!="undefined"){
+        fbq('track', 'PageView',{},{eventID: eventId});
+    }
+    sendFacebookEvents('PageView',eventId);
+    
+    // начал квиз
+    if (typeof(window.gtag) != "undefined") {
+        gtag( 'event', 'start_quiz' );
+    }
+    if (typeof(window.ym) != "undefined") {
+        ym(66248908,'reachGoal','start_quiz')
+    }
+    pv++
+}
+// начал оплату
+$('.constructor-hoodie').on('click','#formnewconstructor button',function(e){
+    var date_for_event = new Date();
+    var eventId = "mev"+date_for_event.getTime();
+    if(typeof(fbq)!="undefined"){
+        fbq('track', 'InitiateCheckout',{},{eventID: eventId});
+    }
+    sendFacebookEvents('InitiateCheckout',eventId,window.customData);
+    
+    if(typeof(window.gtag)!="undefined"){
+        gtag( 'event', 'startpayment', {'value': window.tcart.amount} );
+    }
+    if(typeof(window.ym)!="undefined"){
+        ym(66248908,'reachGoal','startpayment');
+    }
+})
 //отправка статистики
 
 function closeIt() {

@@ -5,8 +5,13 @@
                 руб.</s> Экономия при заказе сегодня: <b id="price-economy"></b></p>
         <p>Если вы не имеете возможности оплатить заказ сейчас - запросите резерв скидки в WhatsApp, нажав следующую
             кнопку:</p>
-        <button type="submit" class="btn">Оплатить заказ</button> <button type="submit"
-            class="btn_stroke">WhatsApp</button>
+        <form role="form"  id="formnewconstructor" name="formnewconstructor" method='POST' data-formactiontype="2" class="t-form js-form-proccess" data-formcart="y">
+                <input type="hidden" name="formservices[]" value="e9f6f66114ab947456b16b576e0d1141" class="js-formaction-services">
+                <input type="hidden" name="orderId" class="t-input js-tilda-rule" data-tilda-req="1" data-tilda-rule="number" value="">
+                <button type="submit" class="btn">Оплатить заказ</button> 
+            </form>
+        <a href="https://api.whatsapp.com/send?phone=79160087490" target="_blank" 
+            class="btn_stroke">WhatsApp</a>
         <p><b>Внимание!</b> Если вы не произведёте оплату сейчас или не забронируете скидку акционная цена может не
             сохраниться и быть выше.</p>
         <p><b>Доставка: </b>Когда изделие будет готово, мы отправим письмо со ссылкой, где вы сможете выбрать удобный
