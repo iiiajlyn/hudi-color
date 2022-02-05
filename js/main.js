@@ -352,6 +352,37 @@ async function modalAdd() {
 
         if (this.dataset.modal == "form") {
             modal.classList.add("full");
+            calc_total("Худи", finalPrice)
+            // закончил квиз
+            if (typeof (window.ym) != "undefined") {
+                ym(66248908, 'reachGoal', 'quiz_finish')
+            }
+            //второй кусок - вызываем событие закончили конструктор для я.метрики
+            function sendFacebookEvents(event, event_id, customData) {
+                var data_to_send = {
+                    "clientUserAgent": window.navigator.userAgent,
+                    "fbp": getCookie("_fbp"),
+                    "url": window.location.href,
+                    "event": event,
+                    "event_id": event_id,
+                    "customData": customData,
+                }
+                $.ajax({
+                    url: 'https://nautz.ru/api/facebook_test_test',
+                    type: 'post',
+                    dataType: 'json',
+                    data: data_to_send,
+                })
+                    .done(function (data) {
+
+                    })
+                    .fail(function (data) {
+                        // console.log("error");
+                    })
+                    .always(function () {
+                        // console.log("complete");
+                    });
+            }
         } else {
             modal.classList.remove("full");
         }
@@ -590,7 +621,7 @@ function choiceImginfoAdd() {
 function choiceImginfoDel() {
     this.removeChild(choiceImgInfo)
 }
-//-------
+//нужна для работы оплаты. добавляет товар в тильдовскую корзину
 function calc_total(length, summa) {
 
     if ("yes" == window.tcart_initted) {
