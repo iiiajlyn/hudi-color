@@ -593,7 +593,7 @@
                                 <div class="parameters-progress__line-activ" style="width: 0%;"></div>
                             </div>
                         </div>
-                        <p class="price"><span>4 990</span><i> 14 990 ₽</i></p>
+                        <p class="price"><span>5 990</span><i> 14 990 ₽</i></p>
                         <div class="btn-box">
                             <div id="btn_next" class="btn_next">Далее</div>
                             <div class="btn_ico_cart disable" data-modal="form">

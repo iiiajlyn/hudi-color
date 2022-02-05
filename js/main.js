@@ -550,7 +550,7 @@ async function startSVG() {
 startSVG()
 startHudi();
 progres();
-
+basePriceHTML();
 //рандом
 let randomBtn = document.getElementById("random-btn"),
     randomElem = ["sleeve-left", "sleeve-right", "cuff-right", "cuff-left", "front", "back", "hood", "pocket", "bottom"];
