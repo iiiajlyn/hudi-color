@@ -1,6 +1,6 @@
 //сбрасываем hash
 if (document.location.hash) {
-    document.location.hash = ""
+    document.location.hash = "";
 }
 
 //слайдер
@@ -74,17 +74,17 @@ let parametersAllArr = {
         ["#FDAE97", "Коралл", true, 0],
         ["#E2E4E6", "Молочный меланж", true, 0],
         ["#E5E4EA", "Тофу", true, 0],
-    ],
-}
+    ]
+};
 //Добавляем класс .human
-document.querySelector(".display-selection .clothes").addEventListener('click', delHuman)
-document.querySelector(".display-selection .person").addEventListener('click', addHuman)
+document.querySelector(".display-selection .clothes").addEventListener('click', delHuman);
+document.querySelector(".display-selection .person").addEventListener('click', addHuman);
 function addHuman() {
     document.querySelector(".constructor-hoodie__design").classList.add("human")
-}
+};
 function delHuman() {
     document.querySelector(".constructor-hoodie__design").classList.remove("human")
-}
+};
 //Добавляем класс .active и делаем активной кнопку далее
 let choiceArr = document.querySelectorAll("div[data-choice] li");
 choiceArr.forEach(element => {
@@ -97,24 +97,24 @@ function choiceTitle(elem, title) {
     setTimeout(animAdd, 200);
     //document.querySelector(".title-choice span").innerHTML = elem
     document.querySelector(".title-choice b").innerHTML = title;
-}
+};
 function animAdd() {
     document.querySelector(".title-choice").classList.add("title-anim")
-}
+};
 
 //Активируем кнопки вперед назад красим пройденые пути а также где мы находимся
 let btnNext = document.querySelector('.btn_next'),
     lineProgress = document.querySelector('.parameters-progress__line-activ'),
     owlNext = document.querySelector('.owl-nav .owl-next'),
-    owlPrev = document.querySelector('.owl-nav .owl-prev')
-owlNext.classList.add('disable')
+    owlPrev = document.querySelector('.owl-nav .owl-prev');
+owlNext.classList.add('disable');
 
 //btnNext.addEventListener('click', disableAdd)
-owlNext.addEventListener('click', disableAdd)
-owlPrev.addEventListener('click', disableAdd)
+owlNext.addEventListener('click', disableAdd);
+owlPrev.addEventListener('click', disableAdd);
 
 function disableAdd() {
-    owlNext.classList.add('disable')
+    owlNext.classList.add('disable');
     //  btnNext.classList.add('disable')
 }
 
@@ -128,7 +128,7 @@ function progres() {
     progresCheck.forEach(element => {
         if (!element.classList.contains("check") && !element.childNodes[0].hasAttribute("data-optional")) {
             progresOccupancy = false;
-            hudiProgress -= 100 / progresSum
+            hudiProgress -= 100 / progresSum;
         }
     });
     lineProgress.style.width = hudiProgress + "%";
@@ -162,7 +162,8 @@ function basePriceHTML() {
 let choiceElem,
     zipper = false,
     itemNum = 0,
-    choiceGetJson = getCookie('hudiColor', json = true),
+    cookieName = 'hudiColor',
+    choiceGetJson = getCookie(cookieName, json = true),
     choiceKeyRu = {
         color: ["Цвет"],
         cut: ["Крой"],
@@ -423,7 +424,7 @@ function clickPrevNone() {
 //Пишем куки
 function cookieAdd() {
     let choiceSetJson = JSON.stringify(choiceElem);
-    setCookie('hudiColor', choiceSetJson, { expires: Date(14) });
+    setCookie(cookieName, choiceSetJson, { expires: Date(140) });
 }
 //Заполняем прогресс констуктора из кук
 function startHudi() {
@@ -562,7 +563,6 @@ let randomBtn = document.getElementById("random-btn"),
 randomBtn.onclick = randomHudi;
 function randomHudi() {
     for (let key in randomElem) {
-        //console.log(parametersAllArr["color"][numRandom]);
         numRandom = Math.floor(Math.random() * parametersAllArr["color"].length);
         choiceElem[randomElem[key]] = parametersAllArr["color"][numRandom];
     }
@@ -595,39 +595,39 @@ function choiceImginfoAdd() {
 function choiceImginfoDel() {
     this.removeChild(choiceImgInfo)
 }
-//нужна для работы оплаты. добавляет товар в тильдовскую корзину
+//нужна для работы оплаты. добавляет товар в тильдовскую корзину нужно раскомментировать
 function calc_total(length, summa) {
+    /*
+        if ("yes" == window.tcart_initted) {
+            window.tcart.amount = summa;
+            window.tcart.prodamount = summa;
+            window.tcart.total = summa;
 
-    if ("yes" == window.tcart_initted) {
-        window.tcart.amount = summa;
-        window.tcart.prodamount = summa;
-        window.tcart.total = summa;
-
-        window.tcart.products[0] = {
-            amount: summa,
-            name: 'Услуга по пошиву ' + length,
-            price: summa,
-            quantity: 1
-        };
-        return
-    } else {
-        var cart_main_div = $(".t706").parent("div").attr("id");
-        var div_num = cart_main_div.slice(3);
-        t_onFuncLoad('tcart__init', function () {
-            tcart__init(div_num, '');
-            setTimeout(calc_total(length, summa), 200)
-        });
-    }
+            window.tcart.products[0] = {
+                amount: summa,
+                name: 'Услуга по пошиву ' + length,
+                price: summa,
+                quantity: 1
+            };
+            return
+        } else {
+            var cart_main_div = $(".t706").parent("div").attr("id");
+            var div_num = cart_main_div.slice(3);
+            t_onFuncLoad('tcart__init', function () {
+                tcart__init(div_num, '');
+                setTimeout(calc_total(length, summa), 200)
+            });
+        } */
 
 }
-function sendFacebookEvents(event,event_id,customData){
+function sendFacebookEvents(event, event_id, customData) {
     var data_to_send = {
-        "clientUserAgent":window.navigator.userAgent,
-        "fbp":getCookie("_fbp"),
-        "url":window.location.href,
-        "event":event,
-        "event_id":event_id,
-        "customData":customData,
+        "clientUserAgent": window.navigator.userAgent,
+        "fbp": getCookie("_fbp"),
+        "url": window.location.href,
+        "event": event,
+        "event_id": event_id,
+        "customData": customData,
     }
     $.ajax({
         url: 'https://nautz.ru/api/facebook_test_test',
@@ -635,49 +635,49 @@ function sendFacebookEvents(event,event_id,customData){
         dataType: 'json',
         data: data_to_send,
     })
-    .done(function(data) {
-        
-    })
-    .fail(function(data) {
-        // console.log("error");
-    })
-    .always(function() {
-        // console.log("complete");
-    });
+        .done(function (data) {
+
+        })
+        .fail(function (data) {
+            // console.log("error");
+        })
+        .always(function () {
+            // console.log("complete");
+        });
 }
 // зашли на страницу
 var pv = 0
-if(pv==0){
+if (pv == 0) {
     var date_for_event = new Date();
-    var eventId = "mev"+date_for_event.getTime();
-    if(typeof(fbq)!="undefined"){
-        fbq('track', 'PageView',{},{eventID: eventId});
+    var eventId = "mev" + date_for_event.getTime();
+    if (typeof (fbq) != "undefined") {
+        fbq('track', 'PageView', {}, { eventID: eventId });
     }
-    sendFacebookEvents('PageView',eventId);
-    
+    sendFacebookEvents('PageView', eventId);
+
     // начал квиз
-    if (typeof(window.gtag) != "undefined") {
-        gtag( 'event', 'start_quiz' );
+    if (typeof (window.gtag) != "undefined") {
+        gtag('event', 'start_quiz');
     }
-    if (typeof(window.ym) != "undefined") {
-        ym(66248908,'reachGoal','start_quiz')
+    if (typeof (window.ym) != "undefined") {
+        ym(66248908, 'reachGoal', 'start_quiz')
     }
     pv++
 }
 // начал оплату
-$('.constructor-hoodie').on('click','#formnewconstructor button',function(e){
+$('.constructor-hoodie').on('click', '#formnewconstructor button', function (e) {
     var date_for_event = new Date();
-    var eventId = "mev"+date_for_event.getTime();
-    if(typeof(fbq)!="undefined"){
-        fbq('track', 'InitiateCheckout',{},{eventID: eventId});
+    var eventId = "mev" + date_for_event.getTime();
+    if (typeof (fbq) != "undefined") {
+        fbq('track', 'InitiateCheckout', {}, { eventID: eventId });
     }
-    sendFacebookEvents('InitiateCheckout',eventId,window.customData);
-    
-    if(typeof(window.gtag)!="undefined"){
-        gtag( 'event', 'startpayment', {'value': window.tcart.amount} );
+    sendFacebookEvents('InitiateCheckout', eventId, window.customData);
+
+    if (typeof (window.gtag) != "undefined") {
+        gtag('event', 'startpayment', { 'value': window.tcart.amount });
     }
-    if(typeof(window.ym)!="undefined"){
-        ym(66248908,'reachGoal','startpayment');
+    if (typeof (window.ym) != "undefined") {
+        ym(66248908, 'reachGoal', 'startpayment');
     }
 })
 //отправка статистики

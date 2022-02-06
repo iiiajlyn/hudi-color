@@ -13,7 +13,7 @@ function modalForm() {
     formBtn.addEventListener("mousedown", formHudiFun);
     function formHudiFun() {
         for (let key in choiceElem) {
-            formHudiValue += key + ": ";
+            formHudiValue += choiceKeyRu[key] + ": ";
             formHudiValue += choiceElem[key][1] + ",";
         }
 
@@ -80,38 +80,37 @@ function modalForm() {
                 });
                 promise.then(
                     function (result) {
-                        if (typeof(data.deal_id)!="undefined") {
+                        if (typeof (data.deal_id) != "undefined") {
                             submitInfo.classList.add("yes");
                             document.getElementById("price-info").innerHTML = finalPrice + " руб."
                             document.getElementById("price-economy").innerHTML = (14990 - finalPrice) + " руб."
                             document.getElementsByName("orderId")[0].value = data.deal_id
                             prevForm.classList.add("none")
-                            deleteCookie('hudi');
-                            deleteCookie('hudiColor');
+                            deleteCookie(cookieName);
 
                             // отправили форму
                             var date_for_event = new Date();
-                            var eventId = "mev"+date_for_event.getTime();
+                            var eventId = "mev" + date_for_event.getTime();
                             window.customData = {}
                             window.customData.product_data = {
-                                'currency':'RUB',
-                                'value':window.tcart.amount,
-                                'order_id':data.deal_id
+                                'currency': 'RUB',
+                                'value': window.tcart.amount,
+                                'order_id': data.deal_id
                             };
 
-                            if (!window.fblead){
-                                sendFacebookEvents('Lead',eventId,window.customData);
+                            if (!window.fblead) {
+                                sendFacebookEvents('Lead', eventId, window.customData);
                             }
-                            if (typeof(fbq) != "undefined" && !window.fblead) {
-                                fbq('track', 'Lead',{},{eventID: eventId});
+                            if (typeof (fbq) != "undefined" && !window.fblead) {
+                                fbq('track', 'Lead', {}, { eventID: eventId });
                                 window.fblead = true;
                             }
 
-                            if (typeof(window.gtag) != "undefined") {
-                                gtag( 'event', 'order_form', {'value': window.tcart.amount} );
+                            if (typeof (window.gtag) != "undefined") {
+                                gtag('event', 'order_form', { 'value': window.tcart.amount });
                             }
-                            if (typeof(window.ym) != "undefined") {
-                                ym(66248908,'reachGoal','order_form');
+                            if (typeof (window.ym) != "undefined") {
+                                ym(66248908, 'reachGoal', 'order_form');
                             }
                         }
 
