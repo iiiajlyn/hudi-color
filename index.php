@@ -100,9 +100,9 @@
                         <a href="#cloth" class="item" data-hash="cloth">
                             <p>Ткань</p>
                         </a>
-                        <a href="#embroidery" class="item" data-hash="embroidery">
+                        <!-- <a href="#embroidery" class="item" data-hash="embroidery">
                             <p>Вышивка</p>
-                        </a>
+                        </a> -->
                         <a href="#size" class="item" data-hash="size">
                             <p>Размер</p>
                         </a>
@@ -463,7 +463,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="choice" data-hash="embroidery">
+                        <!-- <div class="choice" data-hash="embroidery">
                             <div class="choice-img" data-choice="embroidery">
                                 <ul class="choice-img">
                                     <li data-item="embroidery-no" data-title="Без вышивки">
@@ -513,7 +513,7 @@
                                     <p>Сейчас еще <span class="num-random">25</span> человек собирают худи в конструкторе!</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="choice" data-hash="size">
                             <div class="choice-size" data-choice="size">
                                 <ul>

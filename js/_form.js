@@ -82,8 +82,8 @@ function modalForm() {
                     function (result) {
                         if (typeof (data.deal_id) != "undefined") {
                             submitInfo.classList.add("yes");
-                            document.getElementById("price-info").innerHTML = finalPrice + " руб."
-                            document.getElementById("price-economy").innerHTML = (14990 - finalPrice) + " руб."
+                            document.getElementById("price-info").innerHTML = finalPrice + " ₽"
+                            document.getElementById("price-economy").innerHTML = (14990 - finalPrice) + " ₽"
                             document.getElementsByName("orderId")[0].value = data.deal_id
                             prevForm.classList.add("none")
                             deleteCookie(cookieName);
@@ -147,7 +147,7 @@ function modalForm() {
     let hudiInfoParm = document.querySelector(".modal-hudi__params"),
         hudiInfoPice = document.querySelector(".modal-hudi__description .price"),
         hudiInfoImg = document.querySelector(".modal-hudi__img");
-    hudiInfoPice.innerHTML = finalPrice + " руб.";
+    hudiInfoPice.innerHTML = finalPrice + " ₽";
     for (let key in choiceElem) {
         let hudiInfoParmLi = document.createElement('li');
         hudiInfoParmLi.innerHTML = `<b>${choiceKeyRu[key]}: </b><span>${choiceElem[key][1]}</span>`;

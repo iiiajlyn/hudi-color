@@ -197,8 +197,8 @@ if (choiceGetJson) {
         hood: ["#997D68", "Кофе", false, 0],
         pocket: ["#997D68", "Кофе", false, 0],
         bottom: ["#997D68", "Кофе", false, 0],
-        cloth: ["yes", "С начесом - теплый", false, 0],
-        embroidery: ["no", "Не выбран", false, 0],
+        cloth: ["no", "Без начеса", false, 0],
+        // embroidery: ["no", "Не выбран", false, 0],
         size: ["no", "Не выбран", false, 0],
         growth: ["no", "Не выбран", false, 0],
     }
@@ -584,7 +584,7 @@ function choiceImginfoAdd() {
         info = this.dataset.title,
         price = this.dataset.price;
     if (this.dataset.price) {
-        choiceImgInfo.innerHTML = `<p>${info}</p><span>${price} руб.</span>`
+        choiceImgInfo.innerHTML = `<p>${info}</p><span>${price} ₽</span>`
     }
     else {
         choiceImgInfo.innerHTML = `<p>${info}</p>`
@@ -702,3 +702,10 @@ function closeIt() {
     }
 }
 window.onbeforeunload = closeIt;
+
+/* отправка статистики
+let analyticsData = choiceElem;
+window.addEventListener("unload", function () {
+    navigator.sendBeacon("../statistics.php", JSON.stringify(analyticsData));
+});
+ */

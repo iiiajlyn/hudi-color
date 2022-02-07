@@ -27,7 +27,7 @@ function scriptsIndex() {
         'js/jquery.maskedinput.min.js',
         'js/owl.carousel.min.js',
         'js/cookie.min.js',
-        'js/main.js',
+        // 'js/main.js',
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
