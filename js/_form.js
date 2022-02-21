@@ -112,6 +112,9 @@ function modalForm() {
                             if (typeof (window.ym) != "undefined") {
                                 ym(66248908, 'reachGoal', 'order_form');
                             }
+
+                            window.statisticDataSendedCounter = 2
+                            closeIt()
                         }
 
                         else {
